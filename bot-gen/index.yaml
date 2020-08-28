@@ -1,0 +1,3816 @@
+apiVersion: v1
+entries:
+  airflow:
+  - annotations:
+      category: WorkFlow
+    apiVersion: v1
+    appVersion: 1.10.12
+    created: "2020-08-28T09:04:59.018814+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 8.x.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 10.x.x
+    description: Apache Airflow is a platform to programmatically author, schedule
+      and monitor workflows.
+    digest: 09377e0a6891e5f1ee299e5543aa86590a00275a29ae4c6856c07c7e2168ed80
+    home: https://airflow.apache.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/airflow.png
+    keywords:
+    - apache
+    - airflow
+    - workflow
+    - dag
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: airflow
+    sources:
+    - https://github.com/bitnami/bitnami-docker-airflow
+    urls:
+    - airflow-6.4.0.tgz
+    version: 6.4.0
+  apache:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 2.4.46
+    created: "2020-08-28T09:04:59.020575+09:00"
+    description: Chart for Apache HTTP Server
+    digest: 5ee595837069c882bab82444fa186ff72a7ee429bd83722280cd014d5423cbc4
+    home: https://httpd.apache.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/apache.png
+    keywords:
+    - apache
+    - http
+    - https
+    - www
+    - web
+    - reverse proxy
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: apache
+    sources:
+    - https://github.com/bitnami/bitnami-docker-apache
+    urls:
+    - apache-7.3.24.tgz
+    version: 7.3.24
+  apm-server:
+  - apiVersion: v1
+    appVersion: 7.0.0
+    created: "2020-08-28T09:04:59.021228+09:00"
+    description: The server receives data from the Elastic APM agents and stores the
+      data into a datastore like Elasticsearch
+    digest: 5e8905623a10b15bd59c739031f4cfa2e05fd9ba3b974fcb39ab0c0b1375a09e
+    home: https://www.elastic.co/solutions/apm
+    icon: https://www.elastic.co/assets/blt47799dcdcf08438d/logo-elastic-beats-lt.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: apm-server
+    sources:
+    - https://www.elastic.co/guide/en/apm/get-started/current/index.html
+    urls:
+    - apm-server-2.1.5.tgz
+    version: 2.1.5
+  aspnet-core:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v1
+    appVersion: 3.1.7
+    created: "2020-08-28T09:04:59.022705+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    description: ASP.NET Core is an open-source framework created by Microsoft for
+      building cloud-enabled, modern applications.
+    digest: 31f565d73a257f27dc46128cecbe3b0572d65dc3d2f847aa9f543fae65a19565
+    home: https://dotnet.microsoft.com/apps/aspnet
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/aspnet-core.png
+    keywords:
+    - asp.net
+    - dotnet
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: aspnet-core
+    sources:
+    - https://github.com/bitnami/bitnami-docker-aspnet-core
+    urls:
+    - aspnet-core-0.2.0.tgz
+    version: 0.2.0
+  atlantis:
+  - apiVersion: v1
+    appVersion: v0.14.0
+    created: "2020-08-28T09:04:59.023497+09:00"
+    description: A Helm chart for Atlantis https://www.runatlantis.io
+    digest: 05ab76da4331f387c2e1c3898443905fab11f1a33012a91e1a25f085bad1d5bd
+    home: https://www.runatlantis.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/atlantis.png
+    keywords:
+    - terraform
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: atlantis
+    sources:
+    - https://github.com/runatlantis/atlantis
+    urls:
+    - atlantis-3.12.2.tgz
+    version: 3.12.2
+  auditbeat:
+  - apiVersion: v1
+    appVersion: 6.7.0
+    created: "2020-08-28T09:04:59.024+09:00"
+    description: A lightweight shipper to audit the activities of users and processes
+      on your systems
+    digest: 5105f71f41b604ed4b82810ffb3ee97a0b049da7dc6dbbda2e483a78aba1864f
+    home: https://www.elastic.co/products/beats/auditbeat
+    icon: https://www.elastic.co/assets/blt27d1fd26b0862613/icon-auditbeat-bb.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: auditbeat
+    sources:
+    - https://www.elastic.co/guide/en/beats/auditbeat/current/index.html
+    urls:
+    - auditbeat-1.1.0.tgz
+    version: 1.1.0
+  aws-alb-ingress-controller:
+  - apiVersion: v1
+    appVersion: v1.1.8
+    created: "2020-08-28T09:04:59.024721+09:00"
+    description: A Helm chart for AWS ALB Ingress Controller
+    digest: 205db8d1832da5209ef56f56a46e722026daf8fb78078ea49418635806add049
+    home: https://github.com/kubernetes-sigs/aws-alb-ingress-controller
+    keywords:
+    - aws
+    - ingress
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: aws-alb-ingress-controller
+    sources:
+    - https://github.com/kubernetes-sigs/aws-alb-ingress-controller
+    urls:
+    - aws-alb-ingress-controller-1.0.2.tgz
+    version: 1.0.2
+  buzzfeed-sso:
+  - apiVersion: v1
+    appVersion: 2.1.0
+    created: "2020-08-28T09:04:59.025353+09:00"
+    description: Single sign-on for your Kubernetes services using Google OAuth
+    digest: 79061534bcb05ed7c9e8dec1f534471da30032682e4ebbf20fab09531ac52cfe
+    home: https://github.com/buzzfeed/sso
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/buzzfeed-sso.png
+    keywords:
+    - sso
+    - octoboi
+    - ssoctopus
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: buzzfeed-sso
+    sources:
+    - https://hub.docker.com/r/buzzfeed/sso/
+    urls:
+    - buzzfeed-sso-0.2.5.tgz
+    version: 0.2.5
+  cassandra:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 3.11.7
+    created: "2020-08-28T09:04:59.026388+09:00"
+    description: Apache Cassandra is a free and open-source distributed database management
+      system designed to handle large amounts of data across many commodity servers,
+      providing high availability with no single point of failure. Cassandra offers
+      robust support for clusters spanning multiple datacenters, with asynchronous
+      masterless replication allowing low latency operations for all clients.
+    digest: 62e0d19d28a1ee0437e013417a3026416c6e974463c5ba31115d6f29039bde8f
+    home: http://cassandra.apache.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/cassandra.png
+    keywords:
+    - cassandra
+    - database
+    - nosql
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: cassandra
+    sources:
+    - https://github.com/bitnami/bitnami-docker-cassandra
+    urls:
+    - cassandra-5.6.2.tgz
+    version: 5.6.2
+  cassandra-reaper:
+  - apiVersion: v1
+    appVersion: 1.3.0
+    created: "2020-08-28T09:04:59.026775+09:00"
+    description: Reaper is a centralized, stateful, and highly configurable tool for
+      running Apache Cassandra repairs against single or multi-site clusters.
+    digest: e18908178455054407d651b840ac4202a30a3e97f38edb6de4627e8694067509
+    home: http://cassandra-reaper.io/
+    keywords:
+    - cassandra
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: cassandra-reaper
+    urls:
+    - cassandra-reaper-0.2.1.tgz
+    version: 0.2.1
+  cerebro:
+  - apiVersion: v1
+    appVersion: 0.9.2
+    created: "2020-08-28T09:04:59.027918+09:00"
+    description: A Helm chart for Cerebro - a web admin tool that replaces Kopf.
+    digest: 95c662b01199d818c3c580e0549989ee10fcc61d84b4e8c48a3c0d4c4eca0a18
+    home: https://github.com/lmenezes/cerebro
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/cerebro.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: cerebro
+    sources:
+    - https://github.com/lmenezes/cerebro-docker
+    - https://github.com/lmenezes/cerebro
+    urls:
+    - cerebro-1.9.3.tgz
+    version: 1.9.3
+  chartmuseum:
+  - apiVersion: v1
+    appVersion: 0.12.0
+    created: "2020-08-28T09:04:59.028928+09:00"
+    description: Host your own Helm Chart Repository
+    digest: 8664878c1d51dd1a16e94189a7c2c8534a458a2bb3bce457ded793386cea228a
+    home: https://github.com/helm/chartmuseum
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/chartmuseum.png
+    keywords:
+    - chartmuseum
+    - helm
+    - charts repo
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: chartmuseum
+    urls:
+    - chartmuseum-2.13.2.tgz
+    version: 2.13.2
+  clamav:
+  - apiVersion: v1
+    appVersion: "1.6"
+    created: "2020-08-28T09:04:59.029405+09:00"
+    description: An Open-Source antivirus engine for detecting trojans, viruses, malware
+      & other malicious threats.
+    digest: 360a358a816edb0ab8a1678f476978f79b2d663203accc62a3e4dd9fe5e48197
+    home: https://www.clamav.net
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/clamav.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: clamav
+    urls:
+    - clamav-1.0.5.tgz
+    version: 1.0.5
+  collabora-code:
+  - apiVersion: v1
+    appVersion: 4.0.3.1
+    created: "2020-08-28T09:04:59.029989+09:00"
+    description: A Helm chart for Collabora Office - CODE-Edition
+    digest: a25e13f62eab024413c12ef74fc2d870b97582d78f1870030224787dcea79444
+    home: https://www.collaboraoffice.com/code/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/collabora-code
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: collabora-code
+    sources:
+    - https://github.com/CollaboraOnline/Docker-CODE
+    urls:
+    - collabora-code-1.0.6.tgz
+    version: 1.0.6
+  common:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 0.6.0
+    created: "2020-08-28T09:04:59.03048+09:00"
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
+    digest: 6169377bcd71ca2ad544ed06cb5016537e082e55f7d135839d9590e2169e9b24
+    home: http://www.bitnami.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/common.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    - bitnami
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: common
+    sources:
+    - https://github.com/bitnami/charts
+    urls:
+    - common-0.6.0.tgz
+    version: 0.6.0
+  consul:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v1
+    appVersion: 1.8.3
+    created: "2020-08-28T09:04:59.031472+09:00"
+    description: Highly available and distributed service discovery and key-value
+      store designed with support for the modern data center to make distributed systems
+      and configuration easy.
+    digest: 3edb24418763138f2ac026c1be6fb4427af4b881bea901740abf2099ffe2f30f
+    home: https://www.consul.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/consul.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: consul
+    sources:
+    - https://github.com/bitnami/bitnami-docker-consul
+    urls:
+    - consul-7.1.6.tgz
+    version: 7.1.6
+  contour:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 1.7.0
+    created: "2020-08-28T09:04:59.033134+09:00"
+    description: Contour Ingress controller for Kubernetes
+    digest: 39ac3ace17d021eff3ebe6b092499e509a80bba7e8fa8f61d25c7adffdb38d10
+    home: https://projectcontour.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/contour.png
+    keywords:
+    - ingress
+    - envoy
+    - contour
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: contour
+    sources:
+    - https://github.com/projectcontour/contour
+    - https://github.com/envoyproxy/envoy
+    - https://github.com/bitnami/bitnami-docker-contour
+    urls:
+    - contour-1.2.0.tgz
+    version: 1.2.0
+  coredns:
+  - apiVersion: v1
+    appVersion: 1.7.0
+    created: "2020-08-28T09:04:59.03496+09:00"
+    description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
+      DNS Services
+    digest: 05cdcde29a9c86828e63027e2364f8542dcaf038294d644df45d8734b81bc9e7
+    home: https://coredns.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/coredns.png
+    keywords:
+    - coredns
+    - dns
+    - kubedns
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: coredns
+    sources:
+    - https://github.com/coredns/coredns
+    urls:
+    - coredns-1.13.3.tgz
+    version: 1.13.3
+  couchbase-operator:
+  - apiVersion: v1
+    appVersion: 1.2.2
+    created: "2020-08-28T09:04:59.035525+09:00"
+    description: A Helm chart to deploy the Couchbase Autonomous Operator for easily
+      deploying, managing, and maintaining Couchbase Clusters.
+    digest: f3a2626da5b1ba276553a7bdb80874d53fb8ade9bd9009f8d9e30a97fc32f4ad
+    home: https://www.couchbase.com
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/couchbase-operator.png
+    keywords:
+    - couchbase
+    - operator
+    - database
+    - nosql
+    - cluster
+    - replication
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: couchbase-operator
+    sources:
+    - https://github.com/couchbase/docker/tree/master/enterprise/couchbase-operator/1.0.0
+    urls:
+    - couchbase-operator-1.0.2.tgz
+    version: 1.0.2
+  discourse:
+  - annotations:
+      category: Forum
+    apiVersion: v1
+    appVersion: 2.5.0
+    created: "2020-08-28T09:04:59.04176+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 8.X.X
+    - condition: redis.enabled
+      name: redis
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 10.X.X
+    description: A Helm chart for deploying Discourse to Kubernetes
+    digest: 5295304e62955ea5202459da8b866f54331d2a249c5a60e0513202ac0fe53758
+    home: https://www.discourse.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/discourse.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: discourse
+    sources:
+    - https://github.com/bitnami/bitnami-docker-discourse
+    - https://github.com/spinnaker
+    urls:
+    - discourse-0.3.4.tgz
+    version: 0.3.4
+  docker-registry:
+  - apiVersion: v1
+    appVersion: 2.7.1
+    created: "2020-08-28T09:04:59.042377+09:00"
+    description: A Helm chart for Docker Registry
+    digest: b081d6e320e1c92bb02ae7341ff7fc789b2c2f6d918eff1aa411118fc1944ba6
+    home: https://hub.docker.com/_/registry/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/docker-registry.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: docker-registry
+    sources:
+    - https://github.com/docker/distribution-library-image
+    urls:
+    - docker-registry-1.9.4.tgz
+    version: 1.9.4
+  dokuwiki:
+  - annotations:
+      category: Wiki
+    apiVersion: v1
+    appVersion: 20200729.0.0
+    created: "2020-08-28T09:04:59.0437+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.x.x
+    description: DokuWiki is a standards-compliant, simple to use wiki optimized for
+      creating documentation. It is targeted at developer teams, workgroups, and small
+      companies. All data is stored in plain text files, so no database is required.
+    digest: 79abc5dd7d6cfcb74538efe881a6570f8ed67f5ea41eaf68aea764a60c7cb461
+    home: http://www.dokuwiki.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/dokuwiki.png
+    keywords:
+    - dokuwiki
+    - wiki
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: dokuwiki
+    sources:
+    - https://github.com/bitnami/bitnami-docker-dokuwiki
+    urls:
+    - dokuwiki-9.2.0.tgz
+    version: 9.2.0
+  drupal:
+  - annotations:
+      category: CMS
+    apiVersion: v1
+    appVersion: 9.0.3
+    created: "2020-08-28T09:04:59.04633+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 7.x.x
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.x.x
+    description: One of the most versatile open source content management systems.
+    digest: 7e5c8435a75ff49753596744226ea8936867ae506f00cf808b29ae97c9f42d04
+    home: http://www.drupal.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/drupal.png
+    keywords:
+    - drupal
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: drupal
+    sources:
+    - https://github.com/bitnami/bitnami-docker-drupal
+    urls:
+    - drupal-8.1.2.tgz
+    version: 8.1.2
+  efs-provisioner:
+  - apiVersion: v1
+    appVersion: v2.4.0
+    created: "2020-08-28T09:04:59.046799+09:00"
+    description: A Helm chart for the AWS EFS external storage provisioner
+    digest: dec38535c7929fa3ccace5a8173f813b97d7371c54b64f5c17202487551d1122
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/aws/efs
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: efs-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/aws/efs
+    - https://github.com/mirror/busybox
+    urls:
+    - efs-provisioner-0.13.0.tgz
+    version: 0.13.0
+  ejbca:
+  - annotations:
+      category: CertificateAuthority
+    apiVersion: v1
+    appVersion: 6.15.2-6
+    created: "2020-08-28T09:04:59.049451+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - ejbca-database
+      version: 7.x.x
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    description: Enterprise class PKI Certificate Authority built on JEE technology.
+    digest: 3e58754f4a8c45b82df431c7aa91d371416e10b1b01611234bcf018ae774aa9d
+    home: https://www.ejbca.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/ejbca.png
+    keywords:
+    - ejbca
+    - ca
+    - pki
+    - certificate
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: ejbca
+    sources:
+    - https://github.com/bitnami/bitnami-docker-ejbca
+    urls:
+    - ejbca-0.2.1.tgz
+    version: 0.2.1
+  elasticsearch:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 7.9.0
+    created: "2020-08-28T09:04:59.053111+09:00"
+    dependencies:
+    - condition: global.kibanaEnabled
+      name: kibana
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 5.x.x
+    description: A highly scalable open-source full-text search and analytics engine
+    digest: 632b7efddd3ea22f7f1f86164d52cec423d0e8e427d476c4981f0909e80cf216
+    home: https://www.elastic.co/products/elasticsearch
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/elasticsearch.png
+    keywords:
+    - elasticsearch
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: elasticsearch
+    sources:
+    - https://github.com/bitnami/bitnami-docker-elasticsearch
+    urls:
+    - elasticsearch-12.6.2.tgz
+    version: 12.6.2
+  elasticsearch-exporter:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2020-08-28T09:04:59.053792+09:00"
+    description: Elasticsearch stats exporter for Prometheus
+    digest: 4825aac3cac904400d8f086558781f6d87374c8957034a78bccaba46b4d6f651
+    home: https://github.com/justwatchcom/elasticsearch_exporter
+    keywords:
+    - metrics
+    - elasticsearch
+    - monitoring
+    kubeVersion: '>=1.10.0-0'
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: elasticsearch-exporter
+    sources:
+    - https://github.com/justwatchcom/elasticsearch_exporter
+    urls:
+    - elasticsearch-exporter-3.7.0.tgz
+    version: 3.7.0
+  envoy:
+  - apiVersion: v1
+    appVersion: 1.11.2
+    created: "2020-08-28T09:04:59.054481+09:00"
+    description: Envoy is an open source edge and service proxy, designed for cloud-native
+      applications.
+    digest: 6223ca71143c16db6f687fbba3509bcba27f9445433acb531c54b9f58bc9e30b
+    home: https://www.envoyproxy.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/envoy
+    keywords:
+    - envoy
+    - proxy
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: envoy
+    sources:
+    - https://github.com/envoyproxy/envoy
+    urls:
+    - envoy-1.9.2.tgz
+    version: 1.9.2
+  etcd:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 3.4.13
+    created: "2020-08-28T09:04:59.055605+09:00"
+    description: etcd is a distributed key value store that provides a reliable way
+      to store data across a cluster of machines
+    digest: 9d6f7f80403e1fb01013b8dacead2839bbce6f15e2383f9b14f972d945373e2e
+    home: https://coreos.com/etcd/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/etcd.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: etcd
+    sources:
+    - https://github.com/bitnami/bitnami-docker-etcd
+    urls:
+    - etcd-4.10.1.tgz
+    version: 4.10.1
+  etcd-operator:
+  - apiVersion: v1
+    appVersion: 0.9.4
+    created: "2020-08-28T09:04:59.056358+09:00"
+    description: CoreOS etcd-operator Helm chart for Kubernetes
+    digest: e9d60dd7e011a62703dfa5b73b39c2d631168d596d9ea7fc69f938f63c105f43
+    home: https://github.com/coreos/etcd-operator
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/etcd-operator.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: etcd-operator
+    sources:
+    - https://github.com/coreos/etcd-operator
+    urls:
+    - etcd-operator-0.11.0.tgz
+    version: 0.11.0
+  ethereum:
+  - apiVersion: v1
+    appVersion: v1.7.3
+    created: "2020-08-28T09:04:59.057772+09:00"
+    description: private Ethereum network Helm chart for Kubernetes
+    digest: 76a339d9b9de4eebbbc21fb5d6c7ab49aedacecea30aa70a4eff3df64cdea590
+    home: https://www.ethereum.org/
+    icon: https://www.ethereum.org/images/logos/ETHEREUM-LOGO_PORTRAIT_Black_small.png
+    keywords:
+    - ethereum
+    - blockchain
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: ethereum
+    sources:
+    - https://github.com/ethereum/go-ethereum
+    urls:
+    - ethereum-1.0.0.tgz
+    version: 1.0.0
+  eventrouter:
+  - apiVersion: v1
+    appVersion: "0.3"
+    created: "2020-08-28T09:04:59.058128+09:00"
+    description: A Helm chart for eventruter (https://github.com/heptiolabs/eventrouter)
+    digest: c0d13ef1b377274fb89dc04e7438e927245960a7503674e337235d87ae8bd628
+    home: https://github.com/heptiolabs/eventrouter
+    keywords:
+    - eventrouter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: eventrouter
+    sources:
+    - https://github.com/heptiolabs/eventrouter
+    urls:
+    - eventrouter-0.3.0.tgz
+    version: 0.3.0
+  express-gateway:
+  - apiVersion: v1
+    appVersion: 1.16.9
+    created: "2020-08-28T09:04:59.05864+09:00"
+    description: Express Gateway is an API Gateway that sits at the heart of any microservices
+      architecture
+    digest: 2a1ae3af8fb4d147060dc109cbadf8b697c4beed9a45c668ff9a0f1fe4a84ce9
+    home: https://express-gateway.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/express-gateway.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: express-gateway
+    sources:
+    - https://github.com/expressgateway/express-gateway
+    urls:
+    - express-gateway-1.6.3.tgz
+    version: 1.6.3
+  external-dns:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v1
+    appVersion: 0.7.3
+    created: "2020-08-28T09:04:59.060261+09:00"
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: 074c1e01b2c304e82d604e3c088e39d009acb13f6d0c72c35059e88099dfaee9
+    home: https://github.com/kubernetes-sigs/external-dns
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/external-dns.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: external-dns
+    sources:
+    - https://github.com/kubernetes-sigs/external-dns
+    - https://github.com/bitnami/bitnami-docker-external-dns
+    urls:
+    - external-dns-3.3.0.tgz
+    version: 3.3.0
+  filebeat:
+  - apiVersion: v1
+    appVersion: 7.4.0
+    created: "2020-08-28T09:04:59.06096+09:00"
+    description: A Helm chart to collect Kubernetes logs with filebeat
+    digest: 4b66fa0adfd2f2b0b5ba750be817b96cd49f2cdb48c15becbeaacdbedd107c95
+    home: https://www.elastic.co/products/beats/filebeat
+    icon: https://www.elastic.co/assets/blt47799dcdcf08438d/logo-elastic-beats-lt.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: filebeat
+    sources:
+    - https://www.elastic.co/guide/en/beats/filebeat/current/index.html
+    urls:
+    - filebeat-4.0.0.tgz
+    version: 4.0.0
+  fluentd:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 1.11.2
+    created: "2020-08-28T09:04:59.062044+09:00"
+    description: Fluentd is an open source data collector for unified logging layer
+    digest: 3112432d83dd0c7645f0633801e3a4dcafbf81a9ba7696fe61ba4d17a43b5565
+    home: https://www.fluentd.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/fluentd.png
+    keywords:
+    - fluentd
+    - logging
+    - logs
+    - data
+    - collector
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: fluentd
+    sources:
+    - https://github.com/bitnami/bitnami-docker-fluentd
+    urls:
+    - fluentd-1.3.0.tgz
+    version: 1.3.0
+  fluentd-cloudwatch:
+  - apiVersion: v1
+    appVersion: v1.7.3-debian-cloudwatch-1.0
+    created: "2020-08-28T09:04:59.062715+09:00"
+    description: A Fluentd CloudWatch Helm chart for Kubernetes.
+    digest: 8e8b01c848bd785d952c48d194e29b02fd4ca157b046a96e7a0fb92b8d67f8f6
+    home: https://www.fluentd.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/fluentd-cloudwatch.png
+    keywords:
+    - fluentd
+    - cloudwatch
+    - logging
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: fluentd-cloudwatch
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/fluent/fluentd-kubernetes-daemonset
+    urls:
+    - fluentd-cloudwatch-0.13.0.tgz
+    version: 0.13.0
+  gangway:
+  - apiVersion: v1
+    appVersion: 3.3.0
+    created: "2020-08-28T09:04:59.063315+09:00"
+    description: An application that can be used to easily enable authentication flows
+      via OIDC for a kubernetes cluster.
+    digest: cbf7e6f3a2932c43b3dc7c52e80c0df4bd3d06aa4d8c446d42b06c8bec69d0ba
+    home: https://github.com/heptiolabs/gangway
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: gangway
+    sources:
+    - https://github.com/heptiolabs/gangway
+    urls:
+    - gangway-0.4.2.tgz
+    version: 0.4.2
+  gce-ingress:
+  - apiVersion: v1
+    appVersion: 1.4.0
+    created: "2020-08-28T09:04:59.063754+09:00"
+    description: A GCE Ingress Controller
+    digest: 2288c37b4e8340dc9962844dec355a84d8e4a0244737104b984ef700abe23f49
+    home: https://github.com/kubernetes/ingress-gce
+    keywords:
+    - ingress
+    - gce
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: gce-ingress
+    sources:
+    - https://github.com/kubernetes/ingress-gce
+    urls:
+    - gce-ingress-1.2.0.tgz
+    version: 1.2.0
+  gcp-night-king:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2020-08-28T09:04:59.064048+09:00"
+    description: A Helm chart for GCP Night King
+    digest: a1c03222a1f367d1f50e1ce3d0fd50edffff043edb52e3f5b1abd12b2bf2535b
+    home: https://hub.docker.com/r/itamarost/gcp-night-king/
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: gcp-night-king
+    sources:
+    - https://github.com/itamaro/gcp-go-night-king
+    - https://github.com/itamaro/gcp-night-king
+    urls:
+    - gcp-night-king-1.0.2.tgz
+    version: 1.0.2
+  ghost:
+  - annotations:
+      category: CMS
+    apiVersion: v1
+    appVersion: 3.31.2
+    created: "2020-08-28T09:04:59.06808+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - ghost-database
+      version: 7.x.x
+    description: A simple, powerful publishing platform that allows you to share your
+      stories with the world
+    digest: b927deb6e8d6a0a6861b10ee4bc9caac72d240f2e57580c79cd465b3ced69baa
+    home: http://www.ghost.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/ghost.png
+    keywords:
+    - ghost
+    - blog
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: ghost
+    sources:
+    - https://github.com/bitnami/bitnami-docker-ghost
+    urls:
+    - ghost-10.1.4.tgz
+    version: 10.1.4
+  gocd:
+  - apiVersion: v1
+    appVersion: 20.7.0
+    created: "2020-08-28T09:04:59.069823+09:00"
+    description: GoCD is an open-source continuous delivery server to model and visualize
+      complex workflows with ease.
+    digest: 5856a2fdd80d5aca1f95c215fcdbd798d71ac84f7c0732c8fd844f1355744b29
+    home: https://www.gocd.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/gocd.png
+    keywords:
+    - gocd
+    - ci
+    - cd
+    - ci/cd
+    - continuous-integration
+    - continuous-delivery
+    - continuous-deployment
+    - continuous-testing
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: gocd
+    sources:
+    - https://github.com/gocd/gocd
+    urls:
+    - gocd-1.30.0.tgz
+    version: 1.30.0
+  goldpinger:
+  - apiVersion: v1
+    appVersion: 2.0.0
+    created: "2020-08-28T09:04:59.070426+09:00"
+    description: Goldpinger makes calls between its instances for visibility and alerting.
+    digest: 662fb20781b4335e683bb3c2c95bf679025b9fc490cb6692b096a5e6ed8ae4bc
+    home: https://github.com/bloomberg/goldpinger
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: goldpinger
+    sources:
+    - https://github.com/bloomberg/goldpinger
+    urls:
+    - goldpinger-2.0.2.tgz
+    version: 2.0.2
+  grafana:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 7.1.4
+    created: "2020-08-28T09:04:59.071607+09:00"
+    description: Grafana is an open source, feature rich metrics dashboard and graph
+      editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
+    digest: 9c54611b333f70376b129f07f70b2fe1166421eb4af3e44f0c4c9afead16035d
+    home: https://grafana.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/grafana.png
+    keywords:
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: grafana
+    sources:
+    - https://github.com/bitnami/bitnami-docker-grafana
+    urls:
+    - grafana-3.4.1.tgz
+    version: 3.4.1
+  haproxy-ingress:
+  - apiVersion: v1
+    appVersion: 0.7.2
+    created: "2020-08-28T09:04:59.073526+09:00"
+    description: Ingress controller implementation for haproxy loadbalancer.
+    digest: e4e78d1b732b92cd526be91cd26481d3988ae22e8532950ce6672744b26fabd7
+    home: https://github.com/jcmoraisjr/haproxy-ingress
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/haproxy-ingress.png
+    keywords:
+    - ingress
+    - haproxy
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: haproxy-ingress
+    sources:
+    - https://github.com/jcmoraisjr/haproxy-ingress
+    urls:
+    - haproxy-ingress-0.0.27.tgz
+    version: 0.0.27
+  harbor:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 2.0.2
+    created: "2020-08-28T09:04:59.083361+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 9.x.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 10.x.x
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.x.x
+    description: Harbor is an an open source trusted cloud native registry project
+      that stores, signs, and scans content
+    digest: 6439a67b100a8abe5ccf6dc7ec70b6b7e7375b4841b2b473f802a6423a77013f
+    home: https://goharbor.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/harbor.png
+    keywords:
+    - docker
+    - registry
+    - vulnerability
+    - scan
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: harbor
+    sources:
+    - https://github.com/bitnami/bitnami-docker-harbor-core
+    - https://github.com/bitnami/bitnami-docker-harbor-portal
+    - https://github.com/bitnami/bitnami-docker-harbor-jobservice
+    - https://github.com/bitnami/bitnami-docker-harbor-registry
+    - https://github.com/bitnami/bitnami-docker-harbor-registryctl
+    urls:
+    - harbor-7.1.1.tgz
+    version: 7.1.1
+  heapster:
+  - apiVersion: v1
+    appVersion: 1.5.4
+    created: "2020-08-28T09:04:59.083953+09:00"
+    description: Heapster enables Container Cluster Monitoring and Performance Analysis.
+    digest: 038889cfc78ab2769492e7b44d9846c45cd5d9b2021e7f70dbdb71f2bc1bb415
+    home: https://github.com/kubernetes/heapster
+    keywords:
+    - metrics
+    - cadvisor
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: heapster
+    sources:
+    - https://github.com/kubernetes/heapster
+    - https://github.com/kubernetes/contrib/tree/master/addon-resizer
+    urls:
+    - heapster-1.0.2.tgz
+    version: 1.0.2
+  heartbeat:
+  - apiVersion: v1
+    appVersion: 6.7.0
+    created: "2020-08-28T09:04:59.084388+09:00"
+    description: A Helm chart to periodically check the status of your services with
+      heartbeat
+    digest: 06b411c9a3476cd2e67208921ea02089df89aff71e82e003e1e0c01c0cdcd776
+    home: https://www.elastic.co/products/beats/heartbeat
+    icon: https://www.elastic.co/jp/assets/blt75e7956191e1bd55/icon-heartbeat-bb.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: heartbeat
+    sources:
+    - https://www.elastic.co/guide/en/beats/heartbeat/current/index.html
+    urls:
+    - heartbeat-1.2.0.tgz
+    version: 1.2.0
+  helm-exporter:
+  - apiVersion: v1
+    appVersion: 0.4.0
+    created: "2020-08-28T09:04:59.084773+09:00"
+    deprecated: true
+    description: DEPRECATED Exports helm release stats to prometheus
+    digest: cf767fce0fd8543f3718b8bbd67780916973da5076688571275a278f0a2899f8
+    home: https://github.com/sstarcher/helm-exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: helm-exporter
+    sources:
+    - https://github.com/sstarcher/helm-exporter
+    urls:
+    - helm-exporter-0.3.3.tgz
+    version: 0.3.3
+  hl-composer:
+  - apiVersion: v1
+    appVersion: 0.20.0
+    created: "2020-08-28T09:04:59.085376+09:00"
+    description: Hyperledger Composer REST Server chart
+    digest: 7693dd309fff02d39742f563b954fae9185826240ace1e3cee0bfca00423173e
+    home: https://hyperledger.github.io/composer
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/hl-composer.png
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    - composer
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: hl-composer
+    sources:
+    - https://github.com/hyperledger/composer
+    urls:
+    - hl-composer-1.0.12.tgz
+    version: 1.0.12
+  hlf-couchdb:
+  - apiVersion: v1
+    appVersion: 0.4.10
+    created: "2020-08-28T09:04:59.085872+09:00"
+    description: CouchDB instance for Hyperledger Fabric (these charts are created
+      by AID:Tech and are currently not directly associated with the Hyperledger project)
+    digest: 4ee936f05b6022f10290cc8b44226108ae61999706d60a535aeb3dde975d1736
+    home: http://hyperledger-fabric.readthedocs.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/hlf-couchdb.png
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    - couchdb
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: hlf-couchdb
+    sources:
+    - https://github.com/hyperledger/fabric
+    urls:
+    - hlf-couchdb-1.0.7.tgz
+    version: 1.0.7
+  hlf-ord:
+  - apiVersion: v1
+    appVersion: 1.4.3
+    created: "2020-08-28T09:04:59.086581+09:00"
+    description: Hyperledger Fabric Orderer chart (these charts are created by AID:Tech
+      and are currently not directly associated with the Hyperledger project)
+    digest: 8c3fdd0d0e069b5ed27b57caa507d682467dffa3c39ffd3ce8bf49efce7ec05c
+    home: http://hyperledger-fabric.readthedocs.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/hlf-ord.png
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: hlf-ord
+    sources:
+    - https://github.com/hyperledger/fabric
+    urls:
+    - hlf-ord-1.4.0.tgz
+    version: 1.4.0
+  hlf-peer:
+  - apiVersion: v1
+    appVersion: 1.4.3
+    created: "2020-08-28T09:04:59.087374+09:00"
+    description: Hyperledger Fabric Peer chart (these charts are created by AID:Tech
+      and are currently not directly associated with the Hyperledger project)
+    digest: 2524f117e0374744d0871f2c2da4870e39833f418d9e9d9077569d0a6adf75ac
+    home: http://hyperledger-fabric.readthedocs.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/hlf-peer.png
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: hlf-peer
+    sources:
+    - https://github.com/hyperledger/fabric
+    urls:
+    - hlf-peer-1.6.0.tgz
+    version: 1.6.0
+  hoard:
+  - apiVersion: v1
+    appVersion: 6.0.0
+    created: "2020-08-28T09:04:59.087942+09:00"
+    description: Hoard is a stateless, deterministically encrypted, content-addressed
+      object store
+    digest: 84c3b9dfbced6e04ae325d90bc1f6f57f6348ae04393d54ea38ed58b3359b913
+    home: https://github.com/monax/hoard
+    icon: https://pbs.twimg.com/profile_images/781959787856687105/76s1CJER_400x400.jpg
+    keywords:
+    - s3
+    - aws
+    - gcp
+    - azure
+    - ipfs
+    - envelope encryption
+    - content addressable
+    - distributed file storage
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: hoard
+    sources:
+    - https://github.com/monax/hoard
+    urls:
+    - hoard-1.0.0.tgz
+    version: 1.0.0
+  honeydipper:
+  - apiVersion: v1
+    appVersion: 0.2.0
+    created: "2020-08-28T09:04:59.088477+09:00"
+    description: An event driven orchestration system
+    digest: 51f4b23b6f081cb16db8cfb5ea874ac01a4ad8ae35712e3ef4f2f8757e917691
+    home: https://honeydipper.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/honeydipper.png
+    keywords:
+    - event-driven
+    - orchestration
+    - integration
+    - workflows
+    - templating
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: honeydipper
+    urls:
+    - honeydipper-0.1.3.tgz
+    version: 0.1.3
+  ignite:
+  - apiVersion: v1
+    appVersion: 2.7.6
+    created: "2020-08-28T09:04:59.089021+09:00"
+    description: Apache Ignite is an open-source distributed database, caching and
+      processing platform designed to store and compute on large volumes of data across
+      a cluster of nodes.
+    digest: 8a540e64512b06f4df238737120b43c717395eb91be2e1555ed8375868f19dd1
+    home: https://ignite.apache.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/ignite.svg
+    keywords:
+    - java
+    - datagrid
+    - caching
+    - jvm
+    - sql
+    - key-value
+    - nosql
+    - distributed
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: ignite
+    sources:
+    - https://github.com/apache/ignite
+    urls:
+    - ignite-1.1.0.tgz
+    version: 1.1.0
+  influxdb:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 1.8.1
+    created: "2020-08-28T09:04:59.091397+09:00"
+    description: InfluxDB is an open source time-series database designed to handle
+      large write and read loads in real-time.
+    digest: 4bc6c92249033e04927cb38269576b31067d4c4452fd1af3a1d6c9b8de46fcf2
+    home: https://www.influxdata.com/products/influxdb-overview/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/influxdb.png
+    keywords:
+    - influxdb
+    - tick
+    - database
+    - timeseries
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: influxdb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-influxdb
+    urls:
+    - influxdb-0.6.5.tgz
+    version: 0.6.5
+  jenkins:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 2.235.5
+    created: "2020-08-28T09:04:59.092296+09:00"
+    description: The leading open source automation server
+    digest: af5c8c108a8675ac4bea52e4364efb334ae37a8a760180b053b22a36b9a98293
+    home: https://jenkins.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/jenkins.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    urls:
+    - jenkins-5.0.24.tgz
+    version: 5.0.24
+  jenkins-operator:
+  - apiVersion: v1
+    appVersion: 0.3.0
+    created: "2020-08-28T09:04:59.092739+09:00"
+    description: A Helm chart for Kubernetes Jenkins Operator
+    digest: 61bca0b26562d3d97db38203c403dd52afe0b3907f63b8a14eb94e4ff5eb7c0e
+    home: https://github.com/samsung-cnct/jenkins-operator
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/jenkins-operator.png
+    keywords:
+    - jenkins
+    - testing
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: jenkins-operator
+    sources:
+    - https://github.com/samsung-cnct/jenkins-operator
+    - https://github.com/jenkinsci/jenkins
+    urls:
+    - jenkins-operator-0.3.0.tgz
+    version: 0.3.0
+  joomla:
+  - annotations:
+      category: CMS
+    apiVersion: v1
+    appVersion: 3.9.21
+    created: "2020-08-28T09:04:59.095367+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 7.x.x
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.x.x
+    description: PHP content management system (CMS) for publishing web content
+    digest: 219a6516e9b5bca358e09ba31cdfef81a23710dea047cd131516cffe2c746a99
+    home: http://www.joomla.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/joomla.png
+    keywords:
+    - joomla
+    - cms
+    - blog
+    - http
+    - php
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: joomla
+    sources:
+    - https://github.com/bitnami/bitnami-docker-joomla
+    urls:
+    - joomla-8.1.2.tgz
+    version: 8.1.2
+  k8s-spot-rescheduler:
+  - apiVersion: v1
+    appVersion: v0.3.0
+    created: "2020-08-28T09:04:59.095769+09:00"
+    description: A k8s-spot-rescheduler Helm chart for Kubernetes
+    digest: e16c4d48b5314b716306f12e50e9545b7dd5c8e078393c52437f3461f889ad2b
+    home: https://github.com/pusher/k8s-spot-rescheduler
+    keywords:
+    - spot
+    - rescheduler
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: k8s-spot-rescheduler
+    sources:
+    - https://github.com/pusher/k8s-spot-rescheduler
+    urls:
+    - k8s-spot-rescheduler-0.4.4.tgz
+    version: 0.4.4
+  k8s-spot-termination-handler:
+  - apiVersion: v1
+    appVersion: 1.13.7-1
+    created: "2020-08-28T09:04:59.096204+09:00"
+    description: The K8s Spot Termination handler handles draining AWS Spot Instances
+      in response to termination requests.
+    digest: b413158d0cccef2c8dd6d15166ec61a3a63d7abb9f4deace7e694e86d26b95d6
+    home: https://github.com/kube-aws/kube-spot-termination-notice-handler
+    keywords:
+    - spot
+    - termination
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: k8s-spot-termination-handler
+    sources:
+    - https://github.com/kube-aws/kube-spot-termination-notice-handler
+    urls:
+    - k8s-spot-termination-handler-1.4.9.tgz
+    version: 1.4.9
+  kafka:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 2.6.0
+    created: "2020-08-28T09:04:59.100208+09:00"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 5.x.x
+    description: Apache Kafka is a distributed streaming platform.
+    digest: 19600c1db470b464998621661452a3b6d8a53d6806a0094299c2f5eecb6fb92f
+    home: https://kafka.apache.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kafka.png
+    keywords:
+    - kafka
+    - zookeeper
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kafka
+    sources:
+    - https://github.com/bitnami/bitnami-docker-kafka
+    urls:
+    - kafka-11.8.2.tgz
+    version: 11.8.2
+  karma:
+  - apiVersion: v1
+    appVersion: v0.68
+    created: "2020-08-28T09:04:59.100772+09:00"
+    description: A Helm chart for Karma - an UI for Prometheus Alertmanager
+    digest: 371a9ec6bcb0c192082996ad1043f130a60361313d92fd6d4ee3a6244aa8160b
+    home: https://github.com/prymitive/karma
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: karma
+    sources:
+    - https://hub.docker.com/r/lmierzwa/karma/
+    - https://github.com/prymitive/karma
+    urls:
+    - karma-1.5.2.tgz
+    version: 1.5.2
+  katafygio:
+  - apiVersion: v1
+    appVersion: 0.8.1
+    created: "2020-08-28T09:04:59.101229+09:00"
+    description: Continuously backup Kubernetes objets as YAML files in git
+    digest: c19c24354d12ebcf7cb377d1515804f0b61dd12182852eb78cbc123d6190be08
+    home: https://github.com/bpineau/katafygio
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/katafygio.png
+    keywords:
+    - backup
+    - dump
+    - katafygio
+    - git
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: katafygio
+    sources:
+    - https://github.com/bpineau/katafygio
+    urls:
+    - katafygio-1.0.1.tgz
+    version: 1.0.1
+  keycloak-proxy:
+  - apiVersion: v1
+    appVersion: 3.4.2.Final
+    created: "2020-08-28T09:04:59.101682+09:00"
+    description: Keycloak Proxy supports Single Sign-On with Keycloak
+    digest: 1a20697f31433ed039b93f1d16594ef66a5853cd14534f0d1deeb319655c3219
+    home: https://www.keycloak.org/docs/3.3/server_installation/topics/proxy.html
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/keycloak-proxy.png
+    keywords:
+    - authentication
+    - sso
+    - reverseproxy
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: keycloak-proxy
+    sources:
+    - https://github.com/jboss-dockerfiles/keycloak/tree/master/proxy
+    urls:
+    - keycloak-proxy-0.0.1.tgz
+    version: 0.0.1
+  kibana:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 7.9.0
+    created: "2020-08-28T09:04:59.102728+09:00"
+    description: Kibana is an open source, browser based analytics and search dashboard
+      for Elasticsearch.
+    digest: a06325b56d99ec36d6a1c7c512ba82f463caa7853b1b37a27c107a300408af36
+    home: https://www.elastic.co/products/kibana
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kibana.png
+    keywords:
+    - kibana
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kibana
+    sources:
+    - https://github.com/bitnami/bitnami-docker-kibana
+    urls:
+    - kibana-5.3.9.tgz
+    version: 5.3.9
+  kube-downscaler:
+  - apiVersion: v1
+    appVersion: 20.5.0
+    created: "2020-08-28T09:04:59.10321+09:00"
+    description: A Helm chart for kube-downscaler
+    digest: 524e9908e8ce85436a094631d2af33d87fcff92a975956ea33cc4f1f0aff12e8
+    home: https://github.com/hjacobs/kube-downscaler
+    keywords:
+    - k8s pods scheduler
+    - scheduled lifecycle
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kube-downscaler
+    sources:
+    - https://github.com/hjacobs/kube-downscaler
+    urls:
+    - kube-downscaler-0.5.0.tgz
+    version: 0.5.0
+  kube-lego:
+  - apiVersion: v1
+    appVersion: v0.1.6
+    created: "2020-08-28T09:04:59.103564+09:00"
+    deprecated: true
+    description: DEPRECATED Automatically requests certificates from Let's Encrypt
+    digest: 29343ce3657e527cda16b554ab0e8ed6de4730d38cc9dc0e5c8dceb28d06dd46
+    home: https://github.com/jetstack/kube-lego
+    keywords:
+    - kube-lego
+    - letsencrypt
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kube-lego
+    sources:
+    - https://github.com/jetstack/kube-lego/tree/master/examples/nginx
+    urls:
+    - kube-lego-0.4.2.tgz
+    version: 0.4.2
+  kube-slack:
+  - apiVersion: v1
+    appVersion: v4.2.0
+    created: "2020-08-28T09:04:59.103957+09:00"
+    description: Chart for kube-slack, a monitoring service for Kubernetes
+    digest: d644daf77851a4063bfec760dbb8bb0c5227e5a7c9b18761e43a8c1da0d4c574
+    home: https://github.com/wongnai/kube-slack
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kube-slack.svg
+    keywords:
+    - kubernetes
+    - monitoring
+    - slack
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kube-slack
+    sources:
+    - https://github.com/wongnai/kube-slack
+    urls:
+    - kube-slack-1.3.2.tgz
+    version: 1.3.2
+  kube-state-metrics:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 1.9.7
+    created: "2020-08-28T09:04:59.105543+09:00"
+    description: kube-state-metrics is a simple service that listens to the Kubernetes
+      API server and generates metrics about the state of the objects.
+    digest: 13e5803696176ee3ba9919f58720e571026b8eed3f3847a5ffee6a1959bf6eab
+    home: https://github.com/kubernetes/kube-state-metrics
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kube-state-metrics.png
+    keywords:
+    - prometheus
+    - kube-state-metrics
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kube-state-metrics
+    sources:
+    - https://github.com/bitnami/bitnami-docker-kube-state-metrics
+    - https://github.com/kubernetes/kube-state-metrics
+    urls:
+    - kube-state-metrics-0.5.0.tgz
+    version: 0.5.0
+  kube2iam:
+  - apiVersion: v1
+    appVersion: 0.10.9
+    created: "2020-08-28T09:04:59.106075+09:00"
+    description: Provide IAM credentials to pods based on annotations.
+    digest: ed73ac63b14794f0fcdc27ef4a4b7a00d47cc36955d302ca8e3e3396b74dffb9
+    home: https://github.com/jtblin/kube2iam
+    keywords:
+    - kube2iam
+    - aws
+    - iam
+    - security
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kube2iam
+    sources:
+    - https://github.com/jtblin/kube2iam
+    urls:
+    - kube2iam-2.5.1.tgz
+    version: 2.5.1
+  kubeapps:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: v1.11.2
+    created: "2020-08-28T09:04:59.112238+09:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: '>= 8.2.1'
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: ~ 8.10.11
+    description: Kubeapps is a dashboard for your Kubernetes cluster that makes it
+      easy to deploy and manage applications in your cluster using Helm
+    digest: 821705cbe325310301790b21422af3cb52162f83523ab390231ca8ffae521554
+    home: https://kubeapps.com
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kubeapps.png
+    keywords:
+    - helm
+    - dashboard
+    - service catalog
+    - deployment
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kubeapps
+    sources:
+    - https://github.com/kubeapps/kubeapps
+    urls:
+    - kubeapps-3.9.1.tgz
+    version: 3.9.1
+  kuberos:
+  - apiVersion: v1
+    appVersion: "2018-07-03"
+    created: "2020-08-28T09:04:59.113586+09:00"
+    description: An OIDC authentication helper for Kubernetes
+    digest: 4eda0b4a7298793f8aa685a7b1ab7507471c370ef90a40077e5bc5ca252b3853
+    home: https://github.com/negz/kuberos
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kuberos
+    sources:
+    - https://github.com/negz/kuberos
+    urls:
+    - kuberos-0.2.1.tgz
+    version: 0.2.1
+  kubewatch:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 0.1.0
+    created: "2020-08-28T09:04:59.114116+09:00"
+    description: Kubewatch notifies your slack rooms when changes to your cluster
+      occur
+    digest: 39f12d76fa995034678757e400920a41be408f51fb42e2b633dcc2a70f5994f7
+    home: https://github.com/bitnami-labs/kubewatch
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kubewatch.png
+    keywords:
+    - kubernetes
+    - slack
+    - hipchat
+    - mattermost
+    - flock
+    - msteams
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: kubewatch
+    sources:
+    - https://github.com/bitnami/bitnami-docker-kubewatch
+    urls:
+    - kubewatch-1.2.3.tgz
+    version: 1.2.3
+  locust:
+  - apiVersion: v1
+    appVersion: 0.9.0
+    created: "2020-08-28T09:04:59.114578+09:00"
+    description: A modern load testing framework
+    digest: 589136c50b3ab9c91e22aa5ed89089db9598551af579cbaa5f8176d53e5c471b
+    home: http://locust.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/locust.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: locust
+    sources:
+    - https://github.com/greenbird/locust
+    urls:
+    - locust-1.2.1.tgz
+    version: 1.2.1
+  logstash:
+  - annotations:
+      category: LogManagement
+    apiVersion: v1
+    appVersion: 7.9.0
+    created: "2020-08-28T09:04:59.115585+09:00"
+    description: Logstash is an open source, server-side data processing pipeline
+      that ingests data from a multitude of sources simultaneously, transforms it,
+      and then sends it to your favorite "stash".
+    digest: 6f1fa15724ab60d04a82da7f3f0d5f6c8f519b196c3bc2fc12d1af42a60ed43b
+    home: https://www.elastic.co/products/logstash
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/logstash.png
+    keywords:
+    - logstash
+    - logging
+    - elk
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: logstash
+    sources:
+    - https://github.com/bitnami/bitnami-docker-logstash
+    urls:
+    - logstash-0.4.7.tgz
+    version: 0.4.7
+  mariadb:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 10.3.23
+    created: "2020-08-28T09:04:59.117109+09:00"
+    description: Fast, reliable, scalable, and easy to use open-source relational
+      database system. MariaDB Server is intended for mission-critical, heavy-load
+      production systems as well as for embedding into mass-deployed software. Highly
+      available MariaDB cluster.
+    digest: d101b509d33f5974da48c9f832e0c7bf64edefc5b5494744738e8a5ca8c5ebf8
+    home: https://mariadb.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mariadb.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mariadb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mariadb
+    - https://github.com/prometheus/mysqld_exporter
+    urls:
+    - mariadb-7.9.2.tgz
+    version: 7.9.2
+  mariadb-galera:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 10.5.5
+    created: "2020-08-28T09:04:59.118668+09:00"
+    description: MariaDB Galera is a multi-master database cluster solution for synchronous
+      replication and high availability.
+    digest: 799f1e74429c22f14f51b477609134c0fd6dc492759d8e9948f193f1a21c4782
+    home: https://mariadb.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mariadb-galera.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    - galera
+    - percona
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mariadb-galera
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mariadb-galera
+    - https://github.com/prometheus/mysqld_exporter
+    urls:
+    - mariadb-galera-4.3.3.tgz
+    version: 4.3.3
+  memcached:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 1.6.6
+    created: "2020-08-28T09:04:59.119418+09:00"
+    description: Chart for Memcached
+    digest: aac66c6e6ab0127bbeb170b7e07604df396a38351eda1f51bba9784a4240618b
+    home: http://memcached.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/memcached.png
+    keywords:
+    - memcached
+    - cache
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: memcached
+    sources:
+    - https://github.com/bitnami/bitnami-docker-memcached
+    urls:
+    - memcached-4.2.21.tgz
+    version: 4.2.21
+  mercure:
+  - apiVersion: v1
+    appVersion: 0.10.0
+    created: "2020-08-28T09:04:59.120753+09:00"
+    description: The Mercure hub allows to push data updates using the Mercure protocol
+      to web browsers and other HTTP clients in a convenient, fast, reliable and battery-efficient
+      way
+    digest: 42090fa4cbbccd28c3d37882ec5362e08348ab56b0aeb211a4bef19201c25d19
+    home: https://mercure.rocks
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mercure.svg
+    keywords:
+    - mercure
+    - hub
+    - push
+    - streaming-api
+    - async-api
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mercure
+    sources:
+    - https://github.com/dunglas/mercure
+    urls:
+    - mercure-4.0.1.tgz
+    version: 4.0.1
+  metabase:
+  - apiVersion: v1
+    appVersion: v0.36.3
+    created: "2020-08-28T09:04:59.121345+09:00"
+    description: The easy, open source way for everyone in your company to ask questions
+      and learn from data.
+    digest: 48cabf914e8a95433155e98605614486fcbf8fffb8bca0da9d293f57b9213fd3
+    home: http://www.metabase.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/metabase.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: metabase
+    sources:
+    - https://github.com/metabase/metabase
+    urls:
+    - metabase-0.12.1.tgz
+    version: 0.12.1
+  metallb:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 0.9.3
+    created: "2020-08-28T09:04:59.12216+09:00"
+    description: The Metal LB for Kubernetes
+    digest: 96edf8639e8450d3d4d5dda87629c8d77532aa0f7f87653cb4b81fb093283993
+    home: https://metallb.universe.tf
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/metallb.png
+    keywords:
+    - load-balancer
+    - balancer
+    - lb
+    - bgp
+    - arp
+    - vrrp
+    - vip
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: metallb
+    sources:
+    - https://github.com/metallb/metallb
+    - https://github.com/bitnami/bitnami-docker-metallb
+    urls:
+    - metallb-0.1.21.tgz
+    version: 0.1.21
+  metricbeat:
+  - apiVersion: v1
+    appVersion: 6.7.0
+    created: "2020-08-28T09:04:59.122887+09:00"
+    description: A Helm chart to collect Kubernetes logs with metricbeat
+    digest: bf1bfa6d56c82926956075dd904e1e77f564d16c7fc902d68fd9f39165ae0df4
+    home: https://www.elastic.co/products/beats/metricbeat
+    icon: https://www.elastic.co/assets/blt47799dcdcf08438d/logo-elastic-beats-lt.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: metricbeat
+    sources:
+    - https://www.elastic.co/guide/en/beats/metricbeat/current/index.html
+    urls:
+    - metricbeat-1.7.1.tgz
+    version: 1.7.1
+  metrics-server:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 0.3.7
+    created: "2020-08-28T09:04:59.123418+09:00"
+    description: Metrics Server is a cluster-wide aggregator of resource usage data.
+      Metrics Server collects metrics from the Summary API, exposed by Kubelet on
+      each node.
+    digest: 84070bdb0a317f851ef88cc5ccbf274a9766bb543209940f4d81e3e2505ddd53
+    home: https://github.com/kubernetes-incubator/metrics-server
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/metrics-server.png
+    keywords:
+    - metrics-server
+    - cluster
+    - metrics
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: metrics-server
+    sources:
+    - https://github.com/bitnami/bitnami-docker-metrics-server
+    urls:
+    - metrics-server-4.3.1.tgz
+    version: 4.3.1
+  minio:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 2020.8.27
+    created: "2020-08-28T09:04:59.124454+09:00"
+    description: MinIO is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.)
+    digest: c898b74daaf216fb2016ba4fbd7e1c9c677ec4d5d0469b611c1c28c0d3d31433
+    home: https://min.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/minio.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: minio
+    sources:
+    - https://github.com/bitnami/bitnami-docker-minio
+    urls:
+    - minio-3.7.3.tgz
+    version: 3.7.3
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 4.4.0
+    created: "2020-08-28T09:04:59.126934+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: b07aeec2ac3a08f1aea6e0fa0100269119bdf5e14c6ccab052dae17ed05cf5b2
+    home: https://mongodb.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mongodb.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    urls:
+    - mongodb-9.0.0.tgz
+    version: 9.0.0
+  mongodb-replicaset:
+  - apiVersion: v1
+    appVersion: "3.6"
+    created: "2020-08-28T09:04:59.12888+09:00"
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: c154aafa1279b602bf6563f85b4e204b34dac06f614abd58bdcecb0202544313
+    home: https://github.com/mongodb/mongo
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mongodb-replicaset.jpg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mongodb-replicaset
+    sources:
+    - https://github.com/mongodb/mongo
+    - https://github.com/percona/mongodb_exporter
+    urls:
+    - mongodb-replicaset-3.17.1.tgz
+    version: 3.17.1
+  mongodb-sharded:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 4.4.0
+    created: "2020-08-28T09:04:59.130667+09:00"
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications. Sharded topology.
+    digest: f60ceda1edeb4921f00958bc69b0edacb4559988670c2167371a6a12aa52fcac
+    home: https://mongodb.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mongodb-sharded.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mongodb-sharded
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb-sharded
+    urls:
+    - mongodb-sharded-1.6.7.tgz
+    version: 1.6.7
+  moodle:
+  - annotations:
+      category: E-Learning
+    apiVersion: v1
+    appVersion: 3.9.1
+    created: "2020-08-28T09:04:59.13343+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 7.x.x
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.x.x
+    description: Moodle is a learning platform designed to provide educators, administrators
+      and learners with a single robust, secure and integrated system to create personalised
+      learning environments
+    digest: f2e0ceb9716362e58347f42131ab112ed1cde0f1c0e7b29e39be333dace1185b
+    home: http://www.moodle.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/moodle.png
+    keywords:
+    - moodle
+    - learning
+    - php
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: moodle
+    sources:
+    - https://github.com/bitnami/bitnami-docker-moodle
+    urls:
+    - moodle-8.1.1.tgz
+    version: 8.1.1
+  mssql-linux:
+  - apiVersion: v1
+    appVersion: 14.0.3023.8
+    created: "2020-08-28T09:04:59.134034+09:00"
+    description: SQL Server 2017 Linux Helm Chart
+    digest: 69385082116a324b7bd79f81cabdf597fd1debcc7a1d677f24e9b361a2f615d9
+    home: https://hub.docker.com/r/microsoft/mssql-server-linux/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mssql-linux
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mssql-linux
+    sources:
+    - https://hub.docker.com/r/microsoft/mssql-server-linux/
+    urls:
+    - mssql-linux-0.11.2.tgz
+    version: 0.11.2
+  mxnet:
+  - annotations:
+      category: MachineLearning
+    apiVersion: v1
+    appVersion: 1.6.0
+    created: "2020-08-28T09:04:59.135681+09:00"
+    description: A flexible and efficient library for deep learning
+    digest: 32e55cc210c54b33b3dce943eefb191af2cbf096581bcd16b1e51f365f296da9
+    home: https://mxnet.apache.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mxnet.png
+    keywords:
+    - mxnet
+    - python
+    - machine
+    - learning
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mxnet
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mxnet
+    urls:
+    - mxnet-1.4.23.tgz
+    version: 1.4.23
+  mysql:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 8.0.21
+    created: "2020-08-28T09:04:59.136989+09:00"
+    description: Chart to create a Highly available MySQL cluster
+    digest: e3eba6ffd75eeb43c985515907c13512b25c9b4dd5c75daccdd5d58db16518d3
+    home: https://mysql.com
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mysql.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availablity
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mysql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mysql
+    urls:
+    - mysql-6.14.8.tgz
+    version: 6.14.8
+  mysqldump:
+  - apiVersion: v1
+    appVersion: 2.4.1
+    created: "2020-08-28T09:04:59.137672+09:00"
+    description: A Helm chart to help backup MySQL databases using mysqldump
+    digest: 85bfa978bed3b5ec7302bf08a9bcc476dc7f7810b6984dae907558d96c65c37c
+    home: https://www.mysql.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mysqldump.png
+    keywords:
+    - mysql
+    - mysqldump
+    - backup
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: mysqldump
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html
+    urls:
+    - mysqldump-2.6.1.tgz
+    version: 2.6.1
+  nats:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 2.1.7
+    created: "2020-08-28T09:04:59.138679+09:00"
+    description: An open-source, cloud-native messaging system
+    digest: 8a55e7032d1161beb507c2b15ea7ae313f2b015ed21ba849fcf12566bdf240fa
+    home: https://nats.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/nats.png
+    keywords:
+    - nats
+    - messaging
+    - addressing
+    - discovery
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: nats
+    sources:
+    - https://github.com/bitnami/bitnami-docker-nats
+    urls:
+    - nats-4.5.2.tgz
+    version: 4.5.2
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2020-08-28T09:04:59.139132+09:00"
+    description: nfs-client is an automatic provisioner that used your *already configured*
+      NFS server, automatically creating Persistent Volumes.
+    digest: 74f4dfb7a36cd042caf115275392beb10e96abeb4fbb82e4af62d98af83a3cab
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - nfs-client-provisioner-1.2.9.tgz
+    version: 1.2.9
+  nfs-server-provisioner:
+  - apiVersion: v1
+    appVersion: 2.3.0
+    created: "2020-08-28T09:04:59.139623+09:00"
+    description: nfs-server-provisioner is an out-of-tree dynamic provisioner for
+      Kubernetes. You can use it to quickly & easily deploy shared storage that works
+      almost anywhere.
+    digest: f105be1383b4ba671761279eab4eec4a8a2669fab599ec65e8a8f33a5c55de9a
+    home: https://github.com/kubernetes/charts/tree/master/stable/nfs-server-provisioner
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: nfs-server-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs
+    urls:
+    - nfs-server-provisioner-1.1.1.tgz
+    version: 1.1.1
+  nginx:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 1.19.1
+    created: "2020-08-28T09:04:59.140652+09:00"
+    description: Chart for the nginx server
+    digest: 8be37caf1e8163cab54f4d418cf622f7c10a2834253544a542796b304e150923
+    home: http://www.nginx.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/nginx.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: nginx
+    sources:
+    - https://github.com/bitnami/bitnami-docker-nginx
+    urls:
+    - nginx-6.1.0.tgz
+    version: 6.1.0
+  nginx-ingress-controller:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 0.34.1
+    created: "2020-08-28T09:04:59.14267+09:00"
+    description: Chart for the nginx Ingress controller
+    digest: 575ed14da47b04a74121e76484a075448415c9d833c7ff558cff136a35e84c4c
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/nginx-ingress-controller.png
+    keywords:
+    - ingress
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: nginx-ingress-controller
+    sources:
+    - https://github.com/bitnami/bitnami-docker-nginx-ingress-controller
+    urls:
+    - nginx-ingress-controller-5.4.5.tgz
+    version: 5.4.5
+  nginx-ldapauth-proxy:
+  - apiVersion: v1
+    appVersion: 1.13.5
+    created: "2020-08-28T09:04:59.14313+09:00"
+    description: nginx proxy with ldapauth
+    digest: 765ff26867c8c7f7c46854c7afaa9ca1330c909adbc16c811792720ea135ce18
+    home: https://github.com/nginxinc/nginx-ldap-auth
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/nginx-ldapauth-proxy.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: nginx-ldapauth-proxy
+    sources:
+    - https://github.com/dweomer/dockerfiles-nginx-auth-ldap
+    - https://github.com/kvspb/nginx-auth-ldap
+    urls:
+    - nginx-ldapauth-proxy-0.1.4.tgz
+    version: 0.1.4
+  node:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 10.22.0
+    created: "2020-08-28T09:04:59.146347+09:00"
+    dependencies:
+    - condition: mongodb.install
+      name: mongodb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 8.x.x
+    description: Event-driven I/O server-side JavaScript environment based on V8
+    digest: 6dbb007d8bbf40d2a8347ca048c004ef15900b6ed5a1ab4f5db6e0908579b59b
+    home: http://nodejs.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/node.png
+    keywords:
+    - node
+    - javascript
+    - nodejs
+    - git
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: node
+    sources:
+    - https://github.com/bitnami/bitnami-docker-node
+    urls:
+    - node-12.0.4.tgz
+    version: 12.0.4
+  node-exporter:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 1.0.1
+    created: "2020-08-28T09:04:59.147015+09:00"
+    description: Prometheus exporter for hardware and OS metrics exposed by UNIX kernels,
+      with pluggable metric collectors.
+    digest: 41d9477accea0f84841ac36bd396e20a2e85e1eb704a28021e526ade1189a44e
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/node-exporter.png
+    keywords:
+    - prometheus
+    - node-exporter
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: node-exporter
+    sources:
+    - https://github.com/bitnami/bitnami-docker-node-exporter
+    - https://github.com/prometheus/node_exporter
+    urls:
+    - node-exporter-1.1.0.tgz
+    version: 1.1.0
+  node-problem-detector:
+  - apiVersion: v1
+    appVersion: v0.8.1
+    created: "2020-08-28T09:04:59.147554+09:00"
+    description: Installs the node-problem-detector daemonset for monitoring extra
+      attributes on nodes
+    digest: 10628ec21b475bac927eb7d8356e5f2b1709d10d2d43dd2a83d54a8417bf0eb1
+    home: https://github.com/kubernetes/node-problem-detector
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/node-problem-detector.png
+    keywords:
+    - node
+    - problem
+    - detector
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: node-problem-detector
+    sources:
+    - https://github.com/kubernetes/charts/stable/node-problem-detector
+    - https://github.com/kubernetes/node-problem-detector
+    - https://kubernetes.io/docs/concepts/architecture/nodes/#condition
+    urls:
+    - node-problem-detector-1.7.6.tgz
+    version: 1.7.6
+  oauth2-proxy:
+  - apiVersion: v1
+    appVersion: 5.1.0
+    created: "2020-08-28T09:04:59.148231+09:00"
+    description: A reverse proxy that provides authentication with Google, Github
+      or other providers
+    digest: d47e6048548d667c57e6eb359d299c84f66bafb75e7ff33f7bef515a9e3d5e1b
+    home: https://pusher.github.io/oauth2_proxy/
+    keywords:
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    kubeVersion: '>=1.9.0-0'
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: oauth2-proxy
+    sources:
+    - https://github.com/pusher/oauth2_proxy
+    urls:
+    - oauth2-proxy-3.2.2.tgz
+    version: 3.2.2
+  openiban:
+  - apiVersion: v1
+    appVersion: 1.0.1
+    created: "2020-08-28T09:04:59.148666+09:00"
+    description: OpenIBAN is a self-hosted, free and open-source IBAN validation API.
+    digest: e0f90b9ccd517b124b5133ede8acf13a1e0ee57c449865afb6050165aa346db7
+    home: https://openiban.com
+    keywords:
+    - iban
+    - golang
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: openiban
+    sources:
+    - https://github.com/fourcube/goiban-service
+    urls:
+    - openiban-1.0.0.tgz
+    version: 1.0.0
+  openldap:
+  - apiVersion: v1
+    appVersion: 2.4.48
+    created: "2020-08-28T09:04:59.149217+09:00"
+    description: Community developed LDAP software
+    digest: 4a1a52fb46ded8e386a72a7f7c21918a6a6129ffc9f5e1b060ca5f7bad10b4c0
+    home: https://www.openldap.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/openldap.gif
+    keywords:
+    - ldap
+    - openldap
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: openldap
+    sources:
+    - https://github.com/kubernetes/charts
+    urls:
+    - openldap-1.2.5.tgz
+    version: 1.2.5
+  openvpn:
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: "2020-08-28T09:04:59.149875+09:00"
+    description: A Helm chart to install an openvpn server inside a kubernetes cluster.  Certificate
+      generation is also part of the deployment, and this chart will generate client
+      keys as needed.
+    digest: 762cc518d1001ac7213bed0f8d5c2c1bde6640bac4b499ce32de5ebb9ace6513
+    home: https://openvpn.net/index.php/open-source.html
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/openvpn.png
+    keywords:
+    - openvpn
+    - vpn
+    - tunnel
+    - network
+    - service
+    - connectivity
+    - encryption
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: openvpn
+    sources:
+    - https://github.com/jfelten/openvpn-docker
+    - https://github.com/kubernetes/charts/tree/master/stable/openvpn
+    - https://github.com/jfelten/helm-charts
+    urls:
+    - openvpn-4.2.3.tgz
+    version: 4.2.3
+  orientdb:
+  - apiVersion: v1
+    appVersion: 3.0.13
+    created: "2020-08-28T09:04:59.150995+09:00"
+    description: A Helm chart for Distributed OrientDB
+    digest: f061360273d31e304c24e5afb7913328c75e7dc370fc7a72ed1a8002f58f7e65
+    home: https://orientdb.com
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/orientdb.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: orientdb
+    urls:
+    - orientdb-0.1.2.tgz
+    version: 0.1.2
+  parse:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v1
+    appVersion: 4.3.0
+    created: "2020-08-28T09:04:59.153858+09:00"
+    dependencies:
+    - name: mongodb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 8.x.x
+    description: Parse is a platform that enables users to add a scalable and powerful
+      backend to launch a full-featured app for iOS, Android, JavaScript, Windows,
+      Unity, and more.
+    digest: 217c722b03e3e74a4339db340c875f48974a38531eb974cd040e2c64309d3e2f
+    home: https://parse.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/parse.png
+    keywords:
+    - parse
+    - backend
+    - serverless
+    - platform
+    - mbaas
+    - mobile
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: parse
+    sources:
+    - https://github.com/bitnami/bitnami-docker-parse
+    - https://github.com/bitnami/bitnami-docker-parse-dashboard
+    urls:
+    - parse-11.0.4.tgz
+    version: 11.0.4
+  percona-xtradb-cluster:
+  - apiVersion: v1
+    appVersion: 5.7.19
+    created: "2020-08-28T09:04:59.154597+09:00"
+    description: free, fully compatible, enhanced, open source drop-in replacement
+      for MySQL with Galera Replication (xtradb)
+    digest: aa7dd8a46959974aa218d1fcb5b9eb59cf6bf5bda49edab994c62815a844dfc8
+    home: https://www.percona.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/percona-xtradb-cluster.png
+    keywords:
+    - mysql
+    - percona
+    - database
+    - sql
+    - xtradb
+    - galera
+    - wsrep
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: percona-xtradb-cluster
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/percona-lab/percona-docker/
+    urls:
+    - percona-xtradb-cluster-1.0.5.tgz
+    version: 1.0.5
+  phabricator:
+  - annotations:
+      category: ProjectManagement
+    apiVersion: v1
+    appVersion: 2020.31.0
+    created: "2020-08-28T09:04:59.156731+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 7.x.x
+    description: Collection of open source web applications that help software companies
+      build better software.
+    digest: c03598bf68c1959c65516f0a014e9917fababab1de5a78e3b397494d828c8e8c
+    home: https://www.phacility.com/phabricator/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/phabricator.png
+    keywords:
+    - phabricator
+    - http
+    - https
+    - web
+    - application
+    - collaboration
+    - project management
+    - bug tracking
+    - code review
+    - wiki
+    - git
+    - mercurial
+    - subversion
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: phabricator
+    sources:
+    - https://github.com/bitnami/bitnami-docker-phabricator
+    urls:
+    - phabricator-9.1.14.tgz
+    version: 9.1.14
+  phpmyadmin:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 5.0.2
+    created: "2020-08-28T09:04:59.159917+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    - condition: db.bundleTestDB
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - phpmyadmin-database
+      version: 7.x.x
+    description: phpMyAdmin is an mysql administration frontend
+    digest: 4d232f7eef658d4fb08f55632223e16451f86682afb108fb0b809b12f6521cd2
+    home: https://www.phpmyadmin.net/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/phpmyadmin.png
+    keywords:
+    - mariadb
+    - mysql
+    - phpmyadmin
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: phpmyadmin
+    sources:
+    - https://github.com/bitnami/bitnami-docker-phpmyadmin
+    urls:
+    - phpmyadmin-6.5.0.tgz
+    version: 6.5.0
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 11.9.0
+    created: "2020-08-28T09:04:59.162009+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: 4629ef43cf00755620581fc28037b18fbc05d331e90bb2f11c4431ed078e18bb
+    home: https://www.postgresql.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/postgresql.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    urls:
+    - postgresql-9.3.3.tgz
+    version: 9.3.3
+  postgresql-ha:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 11.9.0
+    created: "2020-08-28T09:04:59.163641+09:00"
+    description: Chart for PostgreSQL with HA architecture (using Replication Manager
+      (repmgr) and Pgpool).
+    digest: 3f264018c8c80bb74db51e05bd0963ca7ae1b52b0c831af544a645a6134f36c1
+    home: https://www.postgresql.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/postgresql-ha.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: postgresql-ha
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    urls:
+    - postgresql-ha-3.5.7.tgz
+    version: 3.5.7
+  presto:
+  - apiVersion: v1
+    appVersion: "329"
+    created: "2020-08-28T09:04:59.164053+09:00"
+    description: Distributed SQL query engine for running interactive analytic queries
+    digest: 7de2c95bf92f350c4539a2942f7f9ed8beb1e22ec8c52e38a2db1b5f93a05e53
+    home: https://prestosql.io
+    icon: https://prestosql.io/docs/current/_static/presto.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: presto
+    sources:
+    - https://github.com/prestosql/presto
+    urls:
+    - presto-0.2.1.tgz
+    version: 0.2.1
+  prometheus:
+  - apiVersion: v1
+    appVersion: 2.20.1
+    created: "2020-08-28T09:04:59.168443+09:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 2.8.*
+    description: Prometheus is a monitoring system and time series database.
+    digest: 6613c041a4da96800c64d9a8db10b2aef43ea013090a7a573dd1523b3bd0c833
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/prometheus.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    urls:
+    - prometheus-11.12.0.tgz
+    version: 11.12.0
+  prometheus-adapter:
+  - apiVersion: v1
+    appVersion: v0.7.0
+    created: "2020-08-28T09:04:59.169077+09:00"
+    description: A Helm chart for k8s prometheus adapter
+    digest: 64703c561958b239f25f58a862f742aa5cd8ef417d88a495d6fbd862394cc5b9
+    home: https://github.com/DirectXMan12/k8s-prometheus-adapter
+    keywords:
+    - hpa
+    - metrics
+    - prometheus
+    - adapter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-adapter
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/DirectXMan12/k8s-prometheus-adapter
+    urls:
+    - prometheus-adapter-2.5.0.tgz
+    version: 2.5.0
+  prometheus-blackbox-exporter:
+  - apiVersion: v1
+    appVersion: 0.16.0
+    created: "2020-08-28T09:04:59.169796+09:00"
+    description: Prometheus Blackbox Exporter
+    digest: a6a7accb1c63597343fd99c7f51a2335b4488508a093b2db00cf500191f02287
+    home: https://github.com/prometheus/blackbox_exporter
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    urls:
+    - prometheus-blackbox-exporter-4.3.0.tgz
+    version: 4.3.0
+  prometheus-cloudwatch-exporter:
+  - apiVersion: v1
+    appVersion: 0.8.0
+    created: "2020-08-28T09:04:59.170516+09:00"
+    description: A Helm chart for prometheus cloudwatch-exporter
+    digest: b60f21001a0f4d8cea880044c89a34acd89edc24786d9f515c79c1fb4fe11114
+    home: https://github.com/prometheus/cloudwatch_exporter
+    keywords:
+    - aws
+    - cloudwatch
+    - prometheus
+    - exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-cloudwatch-exporter
+    sources:
+    - https://github.com/prometheus/cloudwatch_exporter
+    urls:
+    - prometheus-cloudwatch-exporter-0.8.3.tgz
+    version: 0.8.3
+  prometheus-consul-exporter:
+  - apiVersion: v1
+    appVersion: 0.4.0
+    created: "2020-08-28T09:04:59.170944+09:00"
+    description: A Helm chart for the Prometheus Consul Exporter
+    digest: d5fc7e9e562470e9618dbfbf67e60aeb1acebef068869e27f6ee2db5db4104c9
+    home: https://github.com/prometheus/consul_exporter
+    keywords:
+    - metrics
+    - consul
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-consul-exporter
+    urls:
+    - prometheus-consul-exporter-0.1.5.tgz
+    version: 0.1.5
+  prometheus-couchdb-exporter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-08-28T09:04:59.171394+09:00"
+    description: A Helm chart to export the metrics from couchdb in Prometheus format.
+    digest: a22ebc73cae5748bd7cd5f8d38fc9f07fb40871c81de26568b87f3e992f7068f
+    home: https://github.com/gesellix/couchdb-prometheus-exporter
+    keywords:
+    - couchdb-exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-couchdb-exporter
+    sources:
+    - https://github.com/gesellix/couchdb-prometheus-exporter
+    urls:
+    - prometheus-couchdb-exporter-0.1.1.tgz
+    version: 0.1.1
+  prometheus-mongodb-exporter:
+  - apiVersion: v1
+    appVersion: v0.10.0
+    created: "2020-08-28T09:04:59.171928+09:00"
+    description: A Prometheus exporter for MongoDB metrics
+    digest: 3b6660138d51fbc0b3b6a2de6cca4530c94731467d90df88a93de1e94f850414
+    home: https://github.com/percona/mongodb_exporter
+    keywords:
+    - exporter
+    - metrics
+    - mongodb
+    - prometheus
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-mongodb-exporter
+    sources:
+    - https://github.com/percona/mongodb_exporter
+    urls:
+    - prometheus-mongodb-exporter-2.8.0.tgz
+    version: 2.8.0
+  prometheus-mysql-exporter:
+  - apiVersion: v1
+    appVersion: v0.11.0
+    created: "2020-08-28T09:04:59.172449+09:00"
+    description: A Helm chart for prometheus mysql exporter with cloudsqlproxy
+    digest: 69f881edafe63ccbb6cdff1c814350962a38ea1175de7714c4b2b6a2ae310493
+    home: https://github.com/prometheus/mysqld_exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-mysql-exporter
+    sources:
+    - https://github.com/prometheus/mysqld_exporter
+    urls:
+    - prometheus-mysql-exporter-0.7.0.tgz
+    version: 0.7.0
+  prometheus-nats-exporter:
+  - apiVersion: v1
+    appVersion: 0.6.2
+    created: "2020-08-28T09:04:59.172857+09:00"
+    description: A Helm chart for prometheus-nats-exporter
+    digest: a181736d247530d30ebcdd76eb7c01ca992bad2fef2f410ab9f75891c0e2131a
+    home: https://github.com/nats-io/prometheus-nats-exporter
+    keywords:
+    - nats
+    - prometheus
+    - exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-nats-exporter
+    sources:
+    - https://github.com/nats-io/prometheus-nats-exporter
+    urls:
+    - prometheus-nats-exporter-2.5.0.tgz
+    version: 2.5.0
+  prometheus-node-exporter:
+  - apiVersion: v1
+    appVersion: 1.0.1
+    created: "2020-08-28T09:04:59.174077+09:00"
+    description: A Helm chart for prometheus node-exporter
+    digest: c4a0ea9bd78243b120249b1d6d36d8959d92742984031a77090adedef2e6a3bf
+    home: https://github.com/prometheus/node_exporter/
+    keywords:
+    - node-exporter
+    - prometheus
+    - exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-node-exporter
+    sources:
+    - https://github.com/prometheus/node_exporter/
+    urls:
+    - prometheus-node-exporter-1.11.1.tgz
+    version: 1.11.1
+  prometheus-operator:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 0.41.0
+    created: "2020-08-28T09:04:59.184726+09:00"
+    dependencies:
+    - condition: exporters.enabled,exporters.node-exporter.enabled
+      name: node-exporter
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 1.x.x
+    - condition: exporters.enabled,exporters.kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.x.x
+    description: The Prometheus Operator for Kubernetes provides easy monitoring definitions
+      for Kubernetes services and deployment and management of Prometheus instances.
+    digest: 84f09964da0d4cc5ccbf0df6aa2ff519df8b66b1cdd60f1939dc1649131f3155
+    home: https://github.com/coreos/prometheus-operator/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/prometheus-operator.png
+    keywords:
+    - prometheus
+    - alertmanager
+    - operator
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-operator
+    sources:
+    - https://github.com/bitnami/bitnami-docker-prometheus-operator
+    - https://github.com/coreos/prometheus-operator/
+    urls:
+    - prometheus-operator-0.32.0.tgz
+    version: 0.32.0
+  prometheus-postgres-exporter:
+  - apiVersion: v1
+    appVersion: 0.8.0
+    created: "2020-08-28T09:04:59.185501+09:00"
+    description: A Helm chart for prometheus postgres-exporter
+    digest: 5eab48336178720dce4c276bc8beedceccc9784172773ed8b684381b65daec2c
+    home: https://github.com/wrouesnel/postgres_exporter
+    keywords:
+    - postgresql
+    - prometheus
+    - exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-postgres-exporter
+    sources:
+    - https://github.com/wrouesnel/postgres_exporter
+    urls:
+    - prometheus-postgres-exporter-1.3.0.tgz
+    version: 1.3.0
+  prometheus-pushgateway:
+  - apiVersion: v1
+    appVersion: 1.2.0
+    created: "2020-08-28T09:04:59.186908+09:00"
+    description: A Helm chart for prometheus pushgateway
+    digest: 1857d9d0cad900961d5fed96af43374e1a32693dfc7984a4d6f4e58af57cf146
+    home: https://github.com/prometheus/pushgateway
+    keywords:
+    - pushgateway
+    - prometheus
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-pushgateway
+    sources:
+    - https://github.com/prometheus/pushgateway
+    urls:
+    - prometheus-pushgateway-1.4.1.tgz
+    version: 1.4.1
+  prometheus-rabbitmq-exporter:
+  - apiVersion: v1
+    appVersion: v0.29.0
+    created: "2020-08-28T09:04:59.18735+09:00"
+    description: Rabbitmq metrics exporter for prometheus
+    digest: 568c0dcf9781140bb4509a78dd5117efeb41672dc523e4ac949e0a43019aad70
+    home: https://github.com/kbudde/rabbitmq_exporter
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-rabbitmq-exporter
+    sources:
+    - https://github.com/kbudde/rabbitmq_exporter
+    urls:
+    - prometheus-rabbitmq-exporter-0.5.5.tgz
+    version: 0.5.5
+  prometheus-redis-exporter:
+  - apiVersion: v1
+    appVersion: 1.3.4
+    created: "2020-08-28T09:04:59.187876+09:00"
+    description: Prometheus exporter for Redis metrics
+    digest: 41f61570ace665f9bb75d8fc2a4eee934c29cc7aa3f5a29a6e15a8152011a065
+    home: https://github.com/oliver006/redis_exporter
+    keywords:
+    - prometheus
+    - redis
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-redis-exporter
+    sources:
+    - https://github.com/oliver006/redis_exporter
+    urls:
+    - prometheus-redis-exporter-3.5.0.tgz
+    version: 3.5.0
+  prometheus-snmp-exporter:
+  - apiVersion: v1
+    appVersion: 0.14.0
+    created: "2020-08-28T09:04:59.188367+09:00"
+    description: Prometheus SNMP Exporter
+    digest: bb278e32366d1c9cfe2ea3378c549647e9b83f4c4e546bc178a7d230cf03d9f2
+    home: https://github.com/prometheus/snmp_exporter
+    keywords:
+    - prometheus
+    - snmp
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-snmp-exporter
+    sources:
+    - https://github.com/prometheus/snmp_exporter
+    urls:
+    - prometheus-snmp-exporter-0.0.5.tgz
+    version: 0.0.5
+  prometheus-to-sd:
+  - apiVersion: v1
+    appVersion: 0.5.2
+    created: "2020-08-28T09:04:59.188657+09:00"
+    description: Scrape metrics stored in prometheus format and push them to the Stackdriver
+    digest: 71039e47b48aa4c1ea349bffba324da03411f401682250b33eb846d1f51b3fc6
+    home: https://github.com/GoogleCloudPlatform/k8s-stackdriver/tree/master/prometheus-to-sd
+    keywords:
+    - prometheus
+    - stackdriver
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: prometheus-to-sd
+    urls:
+    - prometheus-to-sd-0.3.0.tgz
+    version: 0.3.0
+  pytorch:
+  - annotations:
+      category: MachineLearning
+    apiVersion: v1
+    appVersion: 1.6.0
+    created: "2020-08-28T09:04:59.189426+09:00"
+    description: Deep learning platform that accelerates the transition from research
+      prototyping to production deployment
+    digest: ce5d3e78e3adc695c84c71536d92c1ab415c38696b62cfc9aa2effe4d07f33d4
+    home: http://pytorch.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/pytorch.png
+    keywords:
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: pytorch
+    sources:
+    - https://github.com/bitnami/bitnami-docker-pytorch
+    urls:
+    - pytorch-1.3.21.tgz
+    version: 1.3.21
+  rabbitmq:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.8.7
+    created: "2020-08-28T09:04:59.191554+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    description: Open source message broker software that implements the Advanced
+      Message Queuing Protocol (AMQP)
+    digest: c0985a9c6317d7095eebd0082c611452e70fb6790bce7867bfdd2aaafba992c6
+    home: https://www.rabbitmq.com
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/rabbitmq.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/bitnami-docker-rabbitmq
+    urls:
+    - rabbitmq-7.6.4.tgz
+    version: 7.6.4
+  rabbitmq-ha:
+  - apiVersion: v1
+    appVersion: 3.8.7
+    created: "2020-08-28T09:04:59.192962+09:00"
+    description: Highly available RabbitMQ cluster, the open source message broker
+      software that implements the Advanced Message Queuing Protocol (AMQP).
+    digest: 13829c926c7f1f9b76c4eec2758a2243bcce64d05f6d5dd01d6d983c8fc27a88
+    home: https://www.rabbitmq.com
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/rabbitmq-ha.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    - AMQPS
+    - MQTT
+    - STOMP
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: rabbitmq-ha
+    sources:
+    - https://github.com/rabbitmq/rabbitmq
+    - https://github.com/docker-library/rabbitmq
+    urls:
+    - rabbitmq-ha-1.47.0.tgz
+    version: 1.47.0
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 6.0.6
+    created: "2020-08-28T09:04:59.19613+09:00"
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 7896c58ef816f6baf9c31eee88bc79633bdad4b86a14209936cf3b428868e3c6
+    home: http://redis.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/redis.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - redis-10.7.16.tgz
+    version: 10.7.16
+  redis-cluster:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 6.0.6
+    created: "2020-08-28T09:04:59.199111+09:00"
+    dependencies:
+    - name: common
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 14015e561b6cd6278572d3d46dba80ef8b6e2bb8623f844bc962ef58cc984310
+    home: http://redis.io/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/redis-cluster.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: redis-cluster
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - redis-cluster-3.2.0.tgz
+    version: 3.2.0
+  redmine:
+  - annotations:
+      category: ProjectManagement
+    apiVersion: v1
+    appVersion: 4.1.1
+    created: "2020-08-28T09:04:59.204015+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 7.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 8.x.x
+    description: A flexible project management web application.
+    digest: ca146d393a4cb98a5eb61b1983e74ced1afbead8f153559244e05d2127bcf079
+    home: http://www.redmine.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/redmine.png
+    keywords:
+    - redmine
+    - project management
+    - www
+    - http
+    - web
+    - application
+    - ruby
+    - rails
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: redmine
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redmine
+    urls:
+    - redmine-14.2.9.tgz
+    version: 14.2.9
+  rookout:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-08-28T09:04:59.204341+09:00"
+    description: A Helm chart for Rookout agent on Kubernetes
+    digest: 0149c22c5dd5c61fe544ea4f65424f5a4ed02badd1cf08b8ec6658dd6b777813
+    home: http://rookout.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/rookout.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: rookout
+    urls:
+    - rookout-0.1.0.tgz
+    version: 0.1.0
+  rundeck:
+  - apiVersion: v1
+    appVersion: 3.2.7
+    created: "2020-08-28T09:04:59.204923+09:00"
+    description: A Rundeck chart for Kubernetes
+    digest: daaae6e2fc368218bc9fa52cfa48ae53256e7db74a97a625df1b0e6c9d2e764b
+    home: https://github.com/rundeck/rundeck
+    keywords:
+    - rundeck
+    - jobs
+    - automation
+    - operations
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: rundeck
+    sources:
+    - https://github.com/rundeck/rundeck
+    urls:
+    - rundeck-0.3.2.tgz
+    version: 0.3.2
+  schema-registry-ui:
+  - apiVersion: v1
+    appVersion: v0.9.5
+    created: "2020-08-28T09:04:59.205346+09:00"
+    description: This is a web tool for the confluentinc/schema-registry in order
+      to create / view / search / evolve / view history & configure Avro schemas of
+      your Kafka cluster.
+    digest: 8bb9f0f83ba8c1eb2e5dcafcf898da57196cd5e1784e8ce5807f35806847c6c9
+    home: https://github.com/Landoop/schema-registry-ui
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/schema-registry-ui
+    keywords:
+    - confluent
+    - schema-registry-ui
+    - Kafka
+    - avro
+    - schema-registry
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: schema-registry-ui
+    urls:
+    - schema-registry-ui-0.4.2.tgz
+    version: 0.4.2
+  sealed-secrets:
+  - apiVersion: v1
+    appVersion: 0.12.4
+    created: "2020-08-28T09:04:59.205934+09:00"
+    description: A Helm chart for Sealed Secrets
+    digest: 207fd7a4fe4eeb12da580bcac2747595bfa2736077ac96aca6f54797007154d5
+    home: https://github.com/bitnami-labs/sealed-secrets
+    kubeVersion: '>=1.9.0-0'
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: sealed-secrets
+    urls:
+    - sealed-secrets-1.10.3.tgz
+    version: 1.10.3
+  seq:
+  - apiVersion: v1
+    appVersion: "2020"
+    created: "2020-08-28T09:04:59.206564+09:00"
+    description: Seq is the easiest way for development teams to capture, search and
+      visualize structured log events! This page will walk you through the very quick
+      setup process.
+    digest: b54dcb9e38d784cd663ced9ce0eccdf6871fb6533225498118e213ab20234cc4
+    home: https://datalust.co/seq
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/seq
+    keywords:
+    - seq
+    - structured
+    - logging
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: seq
+    sources:
+    - https://github.com/datalust/seq-tickets
+    urls:
+    - seq-2.2.0.tgz
+    version: 2.2.0
+  socat-tunneller:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-08-28T09:04:59.206864+09:00"
+    description: A Helm chart for socat-tunneller
+    digest: 411b35e36d1bb232c6b9647d8efafc5aa50fd28fb2929b5a1d67fa8fb8afe28e
+    home: http://www.dest-unreach.org/socat/
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: socat-tunneller
+    urls:
+    - socat-tunneller-0.1.0.tgz
+    version: 0.1.0
+  spark:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.0.0
+    created: "2020-08-28T09:04:59.207835+09:00"
+    description: Spark is a fast and general-purpose cluster computing system.
+    digest: bea06012b756e964437b58f26aa355c69f190f01183223d3ec747ec72fd85f21
+    home: https://spark.apache.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/spark.png
+    keywords:
+    - apache
+    - spark
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: spark
+    sources:
+    - https://github.com/bitnami/bitnami-docker-spark
+    urls:
+    - spark-2.0.2.tgz
+    version: 2.0.2
+  spartakus:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2020-08-28T09:04:59.208169+09:00"
+    description: Collect information about Kubernetes clusters to help improve the
+      project.
+    digest: c781329332a78361d459ce061408e83aef52750a5b0208b66996d5ca50d7220a
+    home: https://www.shdlr.com
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: spartakus
+    sources:
+    - https://github.com/kubernetes-incubator/spartakus
+    urls:
+    - spartakus-1.1.6.tgz
+    version: 1.1.6
+  stackdriver-exporter:
+  - apiVersion: v1
+    appVersion: 0.6.0
+    created: "2020-08-28T09:04:59.208642+09:00"
+    description: Stackdriver exporter for Prometheus
+    digest: ac08f6cbaada3d77789c7d57c31af50650c4eb018b006f09e7c6a8963dcb6c6a
+    home: https://www.stackdriver.com/
+    keywords:
+    - metrics
+    - stackdriver
+    - monitoring
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: stackdriver-exporter
+    sources:
+    - https://github.com/frodenas/stackdriver_exporter/releases
+    urls:
+    - stackdriver-exporter-1.3.0.tgz
+    version: 1.3.0
+  stolon:
+  - apiVersion: v1
+    appVersion: 0.16.0
+    created: "2020-08-28T09:04:59.209583+09:00"
+    description: Stolon - PostgreSQL cloud native High Availability.
+    digest: 61971b1da779016fa48ef5c4acfd48e666e9758c726c79f6a4d7ee44d0d625cd
+    home: https://github.com/sorintlab/stolon
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/stolon.png
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: stolon
+    sources:
+    - https://github.com/sorintlab/stolon
+    - https://github.com/lwolf/stolon-chart
+    urls:
+    - stolon-1.6.2.tgz
+    version: 1.6.2
+  sumologic-fluentd:
+  - apiVersion: v1
+    appVersion: 2.4.2
+    created: "2020-08-28T09:04:59.210648+09:00"
+    description: Sumologic Log Collector
+    digest: 2a23c1f9bc93f057b5ec9abd4ee9bb37228f15207392ccc1f12ad6e954607452
+    home: https://github.com/SumoLogic/fluentd-kubernetes-sumologic
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/sumologic-fluentd.png
+    keywords:
+    - monitoring
+    - logging
+    kubeVersion: '>=1.10.0-0'
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: sumologic-fluentd
+    sources:
+    - https://github.com/SumoLogic/fluentd-kubernetes-sumologic
+    urls:
+    - sumologic-fluentd-2.1.0.tgz
+    version: 2.1.0
+  superset:
+  - apiVersion: v1
+    appVersion: 0.36.0
+    created: "2020-08-28T09:04:59.212107+09:00"
+    description: Apache Superset (incubating) is a modern, enterprise-ready business
+      intelligence web application
+    digest: 742aa515f951e024b233f3d99479021789a288e37d4bbea219e2e3960a384362
+    home: https://github.com/apache/incubator-superset
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/superset.png
+    keywords:
+    - bi
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: superset
+    sources:
+    - https://github.com/apache/incubator-superset
+    urls:
+    - superset-1.1.11.tgz
+    version: 1.1.11
+  tensorflow-resnet:
+  - annotations:
+      category: MachineLearning
+    apiVersion: v1
+    appVersion: 2.3.0
+    created: "2020-08-28T09:04:59.212708+09:00"
+    description: Open-source software library serving the ResNet machine learning
+      model.
+    digest: a6cbb9584771967783af7ff11e5be6a36e62db2f600179d1c743627029541fbf
+    home: https://www.tensorflow.org/serving/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/tensorflow-resnet.png
+    keywords:
+    - tensorflow
+    - serving
+    - resnet
+    - machine
+    - learning
+    - library
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: tensorflow-resnet
+    sources:
+    - https://github.com/bitnami/bitnami-docker-tensorflow-serving
+    - https://github.com/bitnami/bitnami-docker-tensorflow-resnet
+    urls:
+    - tensorflow-resnet-2.0.18.tgz
+    version: 2.0.18
+  terracotta:
+  - apiVersion: v1
+    appVersion: 5.6.0
+    created: "2020-08-28T09:04:59.213175+09:00"
+    description: Terracotta Ehcache is an improved version of Java's de facto caching
+      API, Ehcache. It has a powerful, streamlined, modernized caching API taking
+      advantage of newer Java features as well as the capability to be used via the
+      JSR-107 "JCache" API.
+    digest: c1a1653604808977effca9093b53f126007fc8ecd6976738cf287e14b2c9010e
+    home: http://www.terracotta.org/
+    icon: http://www.terracotta.org/wp-content/themes/terracotta/library/images/logo.png
+    keywords:
+    - terracotta
+    - jcache
+    - in-memory
+    - caching
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: terracotta
+    sources:
+    - https://github.com/Terracotta-OSS
+    urls:
+    - terracotta-1.1.0.tgz
+    version: 1.1.0
+  testlink:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v1
+    appVersion: 1.9.20
+    created: "2020-08-28T09:04:59.215256+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 7.x.x
+    description: Web-based test management system that facilitates software quality
+      assurance.
+    digest: 7bbdccb893f896de1a646b602a3ac0c674d0be9ce033b1c6764438a032d9ccb8
+    home: http://www.testlink.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/testlink.png
+    keywords:
+    - testlink
+    - testing
+    - http
+    - php
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: testlink
+    sources:
+    - https://github.com/bitnami/bitnami-docker-testlink
+    urls:
+    - testlink-7.2.8.tgz
+    version: 7.2.8
+  thanos:
+  - annotations:
+      category: Analytics
+    apiVersion: v1
+    appVersion: 0.14.0
+    created: "2020-08-28T09:04:59.219534+09:00"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 3.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: be6a1e5ac5d004660ec9eb2f6dbbc309309bfce411602537714649a145b5e936
+    home: https://thanos.io
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/thanos.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: thanos
+    sources:
+    - https://github.com/bitnami/bitnami-docker-thanos
+    urls:
+    - thanos-2.3.2.tgz
+    version: 2.3.2
+  tomcat:
+  - annotations:
+      category: ApplicationServer
+    apiVersion: v1
+    appVersion: 9.0.37
+    created: "2020-08-28T09:04:59.220211+09:00"
+    description: Chart for Apache Tomcat
+    digest: 36b5d42e7de6eb3fc5c1b4ed0d915285fdca273a02af197f9de88e4d440a65e7
+    home: http://tomcat.apache.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/tomcat.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: tomcat
+    sources:
+    - https://github.com/bitnami/bitnami-docker-tomcat
+    urls:
+    - tomcat-6.3.15.tgz
+    version: 6.3.15
+  unbound:
+  - apiVersion: v1
+    appVersion: 1.6.7
+    created: "2020-08-28T09:04:59.220598+09:00"
+    description: Unbound is a fast caching DNS resolver
+    digest: 5f0e5657e5719b8437c8338c1e20424018791ea1d4f6501855b633699f130055
+    home: https://www.unbound.net/
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: unbound
+    sources:
+    - http://unbound.nlnetlabs.nl/svn/
+    - https://github.com/Markbnj/unbound-docker
+    - https://github.com/kubernetes/contrib/tree/master/exec-healthz
+    urls:
+    - unbound-1.1.2.tgz
+    version: 1.1.2
+  unifi:
+  - apiVersion: v1
+    appVersion: 5.12.35
+    created: "2020-08-28T09:04:59.221458+09:00"
+    description: Ubiquiti Network's Unifi Controller
+    digest: bc3b744e645c7bc568b1af75bf822759c6dc12ca72faf51d5d3f3a45e44e57b9
+    home: https://github.com/jacobalberty/unifi-docker
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/unifi.png
+    keywords:
+    - ubiquiti
+    - unifi
+    - mongodb
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: unifi
+    sources:
+    - https://github.com/jacobalberty/unifi-docker
+    - https://github.com/helm/charts/tree/master/stable/unifi
+    urls:
+    - unifi-0.10.1.tgz
+    version: 0.10.1
+  vault:
+  - apiVersion: v1
+    appVersion: 1.2.3
+    created: "2020-08-28T09:04:59.222426+09:00"
+    description: A Helm chart for Vault, a tool for managing secrets
+    digest: dfe01b80b1caf2c71c7cc558e434869f3705f550730ff7ddf3d513e4d76e5a11
+    home: https://www.vaultproject.io/
+    icon: https://www.vaultproject.io/assets/images/mega-nav/logo-vault-0f83e3d2.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/docker-vault
+    urls:
+    - vault-0.23.6.tgz
+    version: 0.23.6
+  vault-operator:
+  - apiVersion: v1
+    appVersion: 0.1.9
+    created: "2020-08-28T09:04:59.22357+09:00"
+    dependencies:
+    - condition: etcd-operator.enabled
+      name: etcd-operator
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.8.0
+    description: CoreOS vault-operator Helm chart for Kubernetes
+    digest: 7b127be8fbc434c349d82de5134e0c7256f099f8153d91a6ff6f22b86e7b943d
+    home: https://github.com/coreos/vault-operator
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/vault-operator.svg
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: vault-operator
+    sources:
+    - https://github.com/coreos/vault-operator
+    urls:
+    - vault-operator-0.1.1.tgz
+    version: 0.1.1
+  vaultingkube:
+  - apiVersion: v1
+    appVersion: 0.1.1
+    created: "2020-08-28T09:04:59.223915+09:00"
+    description: vaultingkube takes config maps and secrets stored inside Hashicorp
+      Vault and syncs them to your Kubernetes cluster.
+    digest: 9008049f35b8a967067fbc6ae31a4ed3845ad748e8eae6a48a66554b7ee81944
+    home: https://github.com/sunshinekitty/vaultingkube
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: vaultingkube
+    urls:
+    - vaultingkube-0.1.2.tgz
+    version: 0.1.2
+  wildfly:
+  - annotations:
+      category: ApplicationServer
+    apiVersion: v1
+    appVersion: 20.0.1
+    created: "2020-08-28T09:04:59.224692+09:00"
+    description: Chart for Wildfly
+    digest: f78a3ef02ec87a1381caca351576394c42d2ddc76a235e67a18696fcd7ef2a2a
+    home: http://wildfly.org
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/wildfly.png
+    keywords:
+    - wildfly
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: wildfly
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wildfly
+    urls:
+    - wildfly-4.3.3.tgz
+    version: 4.3.3
+  wordpress:
+  - annotations:
+      category: CMS
+    apiVersion: v1
+    appVersion: 5.5.0
+    created: "2020-08-28T09:04:59.228022+09:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      tags:
+      - wordpress-database
+      version: 7.x.x
+    description: Web publishing platform for building blogs and websites.
+    digest: 09977e8583176bd60d418ae081e186d0f5cd4ec1d67fe34834cdbc50e78058e5
+    home: http://www.wordpress.com/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/wordpress.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-9.5.1.tgz
+    version: 9.5.1
+  zetcd:
+  - apiVersion: v1
+    appVersion: 0.0.3
+    created: "2020-08-28T09:04:59.229009+09:00"
+    dependencies:
+    - condition: etcd.operator.enabled
+      name: etcd-operator
+      repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+      version: 0.4.3
+    description: CoreOS zetcd Helm chart for Kubernetes
+    digest: d070392891ea95428d201441ec819c62bff6615037be1302017a0108068cd02b
+    home: https://github.com/coreos/zetcd
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: zetcd
+    sources:
+    - https://github.com/coreos/zetcd
+    urls:
+    - zetcd-0.1.9.tgz
+    version: 0.1.9
+  zookeeper:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.6.1
+    created: "2020-08-28T09:04:59.230239+09:00"
+    description: A centralized service for maintaining configuration information,
+      naming, providing distributed synchronization, and providing group services
+      for distributed applications.
+    digest: 0aab97e969297dbefc83533a08c55b467cd0458701b657c16bafdadf04da9b46
+    home: https://zookeeper.apache.org/
+    icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/zookeeper.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - email: info-rdbox@intec.co.jp
+      name: RDBOX Project
+    name: zookeeper
+    sources:
+    - https://github.com/bitnami/bitnami-docker-zookeeper
+    urls:
+    - zookeeper-5.21.5.tgz
+    version: 5.21.5
+generated: "2020-08-28T09:04:59.01071+09:00"
