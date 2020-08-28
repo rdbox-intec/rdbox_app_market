@@ -1,0 +1,87 @@
+replicaCount: 1
+
+image:
+  repository: quay.io/monax/hoard
+  tag: 6.0.0
+  pullPolicy: IfNotPresent
+
+config:
+  listenaddress: tcp://:53431
+  storage:
+    # aws | azure | filesystem | gcp | ipfs
+    storagetype: filesystem
+    addressencoding: base64
+    chunksize: 65536
+    filesystemconfig:
+      rootdirectory: "/data"
+    cloudconfig:
+      bucket: ""
+      prefix: ""
+      region: ""
+    ipfsconfig:
+      remoteapi: ""
+  logging:
+    loggingtype: json
+    channels:
+    - info
+    - trace
+  secrets:
+    symmetric: []
+    openpgp:
+      privateid: ""
+      file: "keyring"
+
+controller:
+  enabled: false
+  keep: false
+
+secrets:
+  creds: "cloud-credentials"
+  keyring: "private-keyring"
+
+# only filesystem
+persistence:
+  size: 10Gi
+  storageClass: openebs-jiva-rdbox
+  accessMode: ReadWriteOnce
+  persistentVolumeReclaimPolicy: "Retain"
+  annotations:
+    "helm.sh/resource-policy": keep
+
+service:
+  type: ClusterIP
+  port: 53431
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/tls-acme: 'true'
+    kubernetes.io/ingress.class: nginx
+  path: /
+  hosts:
+#    - hoard.local
+    - hoard.rdbox.lan
+  tls:
+    - hosts:
+      - '*.rdbox.lan'
+      secretName: rdbox-common-tls
+  #  - secretName: hoard-tls
+  #    hosts:
+  #      - hoard.local
+
+resources: {}
+#   limits:
+#     cpu: 500m
+#     memory: 1Gi
+#   requests:
+#     cpu: 100m
+#     memory: 256Mi
+
+nodeSelector:
+  beta.kubernetes.io/arch: amd64
+  beta.kubernetes.io/os: linux
+  node.rdbox.com/location: hq
+
+tolerations: []
+
+affinity: {}

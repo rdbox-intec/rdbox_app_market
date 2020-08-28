@@ -1,0 +1,15 @@
+apiVersion: v1
+appVersion: 0.6.2
+description: A Helm chart for prometheus-nats-exporter
+home: https://github.com/nats-io/prometheus-nats-exporter
+keywords:
+- nats
+- prometheus
+- exporter
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: prometheus-nats-exporter
+sources:
+- https://github.com/nats-io/prometheus-nats-exporter
+version: 2.5.0

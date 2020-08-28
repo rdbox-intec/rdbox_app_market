@@ -1,0 +1,17 @@
+apiVersion: v1
+appVersion: 1.7.0
+description: CoreDNS is a DNS server that chains plugins and provides Kubernetes DNS
+  Services
+home: https://coredns.io
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/coredns.png
+keywords:
+- coredns
+- dns
+- kubedns
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: coredns
+sources:
+- https://github.com/coredns/coredns
+version: 1.13.3

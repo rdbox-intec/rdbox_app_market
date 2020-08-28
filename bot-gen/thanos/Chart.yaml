@@ -1,0 +1,22 @@
+annotations:
+  category: Analytics
+apiVersion: v1
+appVersion: 0.14.0
+description: Thanos is a highly available metrics system that can be added on top
+  of existing Prometheus deployments, providing a global query view across all Prometheus
+  installations.
+engine: gotpl
+home: https://thanos.io
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/thanos.png
+keywords:
+- analytics
+- monitoring
+- prometheus
+- thanos
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: thanos
+sources:
+- https://github.com/bitnami/bitnami-docker-thanos
+version: 2.3.2

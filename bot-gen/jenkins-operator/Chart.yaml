@@ -1,0 +1,16 @@
+apiVersion: v1
+appVersion: 0.3.0
+description: A Helm chart for Kubernetes Jenkins Operator
+home: https://github.com/samsung-cnct/jenkins-operator
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/jenkins-operator.png
+keywords:
+- jenkins
+- testing
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: jenkins-operator
+sources:
+- https://github.com/samsung-cnct/jenkins-operator
+- https://github.com/jenkinsci/jenkins
+version: 0.3.0

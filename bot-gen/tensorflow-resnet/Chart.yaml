@@ -1,0 +1,23 @@
+annotations:
+  category: MachineLearning
+apiVersion: v1
+appVersion: 2.3.0
+description: Open-source software library serving the ResNet machine learning model.
+engine: gotpl
+home: https://www.tensorflow.org/serving/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/tensorflow-resnet.png
+keywords:
+- tensorflow
+- serving
+- resnet
+- machine
+- learning
+- library
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: tensorflow-resnet
+sources:
+- https://github.com/bitnami/bitnami-docker-tensorflow-serving
+- https://github.com/bitnami/bitnami-docker-tensorflow-resnet
+version: 2.0.18

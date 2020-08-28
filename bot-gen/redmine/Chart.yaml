@@ -1,0 +1,24 @@
+annotations:
+  category: ProjectManagement
+apiVersion: v1
+appVersion: 4.1.1
+description: A flexible project management web application.
+engine: gotpl
+home: http://www.redmine.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/redmine.png
+keywords:
+- redmine
+- project management
+- www
+- http
+- web
+- application
+- ruby
+- rails
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: redmine
+sources:
+- https://github.com/bitnami/bitnami-docker-redmine
+version: 14.2.9

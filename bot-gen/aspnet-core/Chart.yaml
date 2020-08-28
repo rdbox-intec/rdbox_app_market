@@ -1,0 +1,18 @@
+annotations:
+  category: DeveloperTools
+apiVersion: v1
+appVersion: 3.1.7
+description: ASP.NET Core is an open-source framework created by Microsoft for building
+  cloud-enabled, modern applications.
+home: https://dotnet.microsoft.com/apps/aspnet
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/aspnet-core.png
+keywords:
+- asp.net
+- dotnet
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: aspnet-core
+sources:
+- https://github.com/bitnami/bitnami-docker-aspnet-core
+version: 0.2.0

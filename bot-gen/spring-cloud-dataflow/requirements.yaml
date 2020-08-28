@@ -1,0 +1,20 @@
+dependencies:
+- name: common
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - bitnami-common
+  version: 0.x.x
+- condition: mariadb.enabled
+  name: mariadb
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - dataflow-database
+  version: 7.x.x
+- condition: rabbitmq.enabled
+  name: rabbitmq
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 7.x.x
+- condition: kafka.enabled
+  name: kafka
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 11.x.x

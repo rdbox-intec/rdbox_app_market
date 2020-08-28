@@ -1,0 +1,16 @@
+apiVersion: v1
+appVersion: 2.4.2
+description: Sumologic Log Collector
+home: https://github.com/SumoLogic/fluentd-kubernetes-sumologic
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/sumologic-fluentd.png
+keywords:
+- monitoring
+- logging
+kubeVersion: '>=1.10.0-0'
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: sumologic-fluentd
+sources:
+- https://github.com/SumoLogic/fluentd-kubernetes-sumologic
+version: 2.1.0

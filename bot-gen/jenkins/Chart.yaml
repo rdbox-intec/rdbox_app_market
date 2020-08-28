@@ -1,0 +1,22 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 2.235.5
+description: The leading open source automation server
+engine: gotpl
+home: https://jenkins.io/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/jenkins.png
+keywords:
+- jenkins
+- ci
+- cd
+- http
+- web
+- application
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: jenkins
+sources:
+- https://github.com/bitnami/bitnami-docker-jenkins
+version: 5.0.24

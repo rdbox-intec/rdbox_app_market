@@ -1,0 +1,16 @@
+annotations:
+  category: Forum
+apiVersion: v1
+appVersion: 2.5.0
+description: A Helm chart for deploying Discourse to Kubernetes
+engine: gotpl
+home: https://www.discourse.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/discourse.png
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: discourse
+sources:
+- https://github.com/bitnami/bitnami-docker-discourse
+- https://github.com/spinnaker
+version: 0.3.4

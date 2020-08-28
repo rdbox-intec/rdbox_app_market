@@ -1,0 +1,23 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 2020.8.27
+description: MinIO is an object storage server, compatible with Amazon S3 cloud storage
+  service, mainly used for storing unstructured data (such as photos, videos, log
+  files, etc.)
+engine: gotpl
+home: https://min.io
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/minio.png
+keywords:
+- minio
+- storage
+- object-storage
+- s3
+- cluster
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: minio
+sources:
+- https://github.com/bitnami/bitnami-docker-minio
+version: 3.7.3

@@ -1,0 +1,23 @@
+image:
+  repository: rookout/agent
+  tag: 0.2.3
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+
+listenAll: True
+tags: ''
+
+rookout:
+  token: ''
+
+nodeSelector:
+  beta.kubernetes.io/arch: amd64
+  beta.kubernetes.io/os: linux
+  node.rdbox.com/location: hq
+
+tolerations: []
+
+affinity: {}
+replicaCount: 1

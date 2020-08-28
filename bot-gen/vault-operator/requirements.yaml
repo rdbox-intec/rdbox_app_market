@@ -1,0 +1,5 @@
+dependencies:
+- condition: etcd-operator.enabled
+  name: etcd-operator
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 0.8.0

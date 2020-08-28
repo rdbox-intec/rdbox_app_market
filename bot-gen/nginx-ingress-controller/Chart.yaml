@@ -1,0 +1,22 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 0.34.1
+description: Chart for the nginx Ingress controller
+engine: gotpl
+home: https://github.com/kubernetes/ingress-nginx
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/nginx-ingress-controller.png
+keywords:
+- ingress
+- nginx
+- http
+- web
+- www
+- reverse proxy
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: nginx-ingress-controller
+sources:
+- https://github.com/bitnami/bitnami-docker-nginx-ingress-controller
+version: 5.4.5

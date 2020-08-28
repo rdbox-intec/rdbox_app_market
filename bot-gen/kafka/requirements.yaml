@@ -1,0 +1,5 @@
+dependencies:
+- condition: zookeeper.enabled
+  name: zookeeper
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 5.x.x

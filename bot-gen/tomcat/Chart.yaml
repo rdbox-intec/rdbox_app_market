@@ -1,0 +1,22 @@
+annotations:
+  category: ApplicationServer
+apiVersion: v1
+appVersion: 9.0.37
+description: Chart for Apache Tomcat
+engine: gotpl
+home: http://tomcat.apache.org
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/tomcat.png
+keywords:
+- tomcat
+- java
+- http
+- web
+- application server
+- jsp
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: tomcat
+sources:
+- https://github.com/bitnami/bitnami-docker-tomcat
+version: 6.3.15

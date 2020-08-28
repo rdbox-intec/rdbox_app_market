@@ -1,0 +1,13 @@
+apiVersion: v1
+appVersion: 7.0.0
+description: The server receives data from the Elastic APM agents and stores the data
+  into a datastore like Elasticsearch
+home: https://www.elastic.co/solutions/apm
+icon: https://www.elastic.co/assets/blt47799dcdcf08438d/logo-elastic-beats-lt.svg
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: apm-server
+sources:
+- https://www.elastic.co/guide/en/apm/get-started/current/index.html
+version: 2.1.5

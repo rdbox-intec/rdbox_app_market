@@ -1,0 +1,9 @@
+dependencies:
+- condition: mongodb.enabled
+  name: mongodb
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: '>= 8.2.1'
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: ~ 8.10.11

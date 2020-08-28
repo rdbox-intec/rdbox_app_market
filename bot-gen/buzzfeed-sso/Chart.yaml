@@ -1,0 +1,16 @@
+apiVersion: v1
+appVersion: 2.1.0
+description: Single sign-on for your Kubernetes services using Google OAuth
+home: https://github.com/buzzfeed/sso
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/buzzfeed-sso.png
+keywords:
+- sso
+- octoboi
+- ssoctopus
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: buzzfeed-sso
+sources:
+- https://hub.docker.com/r/buzzfeed/sso/
+version: 0.2.5

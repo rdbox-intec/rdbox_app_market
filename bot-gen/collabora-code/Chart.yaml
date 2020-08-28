@@ -1,0 +1,12 @@
+apiVersion: v1
+appVersion: 4.0.3.1
+description: A Helm chart for Collabora Office - CODE-Edition
+home: https://www.collaboraoffice.com/code/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/collabora-code
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: collabora-code
+sources:
+- https://github.com/CollaboraOnline/Docker-CODE
+version: 1.0.6

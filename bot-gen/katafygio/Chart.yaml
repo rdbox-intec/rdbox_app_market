@@ -1,0 +1,18 @@
+apiVersion: v1
+appVersion: 0.8.1
+description: Continuously backup Kubernetes objets as YAML files in git
+engine: gotpl
+home: https://github.com/bpineau/katafygio
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/katafygio.png
+keywords:
+- backup
+- dump
+- katafygio
+- git
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: katafygio
+sources:
+- https://github.com/bpineau/katafygio
+version: 1.0.1

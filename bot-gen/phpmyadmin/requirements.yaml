@@ -1,0 +1,12 @@
+dependencies:
+- name: common
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - bitnami-common
+  version: 0.x.x
+- condition: db.bundleTestDB
+  name: mariadb
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - phpmyadmin-database
+  version: 7.x.x

@@ -1,0 +1,20 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 1.7.0
+description: Contour Ingress controller for Kubernetes
+home: https://projectcontour.io
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/contour.png
+keywords:
+- ingress
+- envoy
+- contour
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: contour
+sources:
+- https://github.com/projectcontour/contour
+- https://github.com/envoyproxy/envoy
+- https://github.com/bitnami/bitnami-docker-contour
+version: 1.2.0

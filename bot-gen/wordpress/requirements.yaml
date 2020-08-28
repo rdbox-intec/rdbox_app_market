@@ -1,0 +1,7 @@
+dependencies:
+- condition: mariadb.enabled
+  name: mariadb
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - wordpress-database
+  version: 7.x.x

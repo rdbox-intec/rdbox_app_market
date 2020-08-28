@@ -1,0 +1,24 @@
+annotations:
+  category: Database
+apiVersion: v1
+appVersion: 4.4.0
+description: NoSQL document-oriented database that stores JSON-like documents with
+  dynamic schemas, simplifying the integration of data in content-driven applications.
+  Sharded topology.
+engine: gotpl
+home: https://mongodb.org
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mongodb-sharded.png
+keywords:
+- mongodb
+- database
+- nosql
+- cluster
+- replicaset
+- replication
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: mongodb-sharded
+sources:
+- https://github.com/bitnami/bitnami-docker-mongodb-sharded
+version: 1.6.7

@@ -1,0 +1,11 @@
+apiVersion: v1
+appVersion: latest
+description: A simple Docker container and image garbage collection script.
+home: https://github.com/spotify/docker-gc
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: spotify-docker-gc
+sources:
+- https://github.com/spotify/docker-gc
+version: 1.0.0

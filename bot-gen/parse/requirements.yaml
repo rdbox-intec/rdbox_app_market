@@ -1,0 +1,4 @@
+dependencies:
+- name: mongodb
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 8.x.x

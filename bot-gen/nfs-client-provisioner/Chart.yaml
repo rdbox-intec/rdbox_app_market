@@ -1,0 +1,15 @@
+apiVersion: v1
+appVersion: 3.1.0
+description: nfs-client is an automatic provisioner that used your *already configured*
+  NFS server, automatically creating Persistent Volumes.
+home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+keywords:
+- nfs
+- storage
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: nfs-client-provisioner
+sources:
+- https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+version: 1.2.9

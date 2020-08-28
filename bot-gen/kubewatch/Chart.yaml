@@ -1,0 +1,22 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 0.1.0
+description: Kubewatch notifies your slack rooms when changes to your cluster occur
+engine: gotpl
+home: https://github.com/bitnami-labs/kubewatch
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kubewatch.png
+keywords:
+- kubernetes
+- slack
+- hipchat
+- mattermost
+- flock
+- msteams
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: kubewatch
+sources:
+- https://github.com/bitnami/bitnami-docker-kubewatch
+version: 1.2.3

@@ -1,0 +1,15 @@
+apiVersion: v1
+appVersion: 1.4.0
+description: A GCE Ingress Controller
+engine: gotpl
+home: https://github.com/kubernetes/ingress-gce
+keywords:
+- ingress
+- gce
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: gce-ingress
+sources:
+- https://github.com/kubernetes/ingress-gce
+version: 1.2.0

@@ -1,0 +1,21 @@
+annotations:
+  category: WorkFlow
+apiVersion: v1
+appVersion: 1.10.12
+description: Apache Airflow is a platform to programmatically author, schedule and
+  monitor workflows.
+engine: gotpl
+home: https://airflow.apache.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/airflow.png
+keywords:
+- apache
+- airflow
+- workflow
+- dag
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: airflow
+sources:
+- https://github.com/bitnami/bitnami-docker-airflow
+version: 6.4.0

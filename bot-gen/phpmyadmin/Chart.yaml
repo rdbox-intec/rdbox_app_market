@@ -1,0 +1,19 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 5.0.2
+description: phpMyAdmin is an mysql administration frontend
+engine: gotpl
+home: https://www.phpmyadmin.net/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/phpmyadmin.png
+keywords:
+- mariadb
+- mysql
+- phpmyadmin
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: phpmyadmin
+sources:
+- https://github.com/bitnami/bitnami-docker-phpmyadmin
+version: 6.5.0

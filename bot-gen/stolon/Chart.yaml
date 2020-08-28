@@ -1,0 +1,14 @@
+apiVersion: v1
+appVersion: 0.16.0
+description: Stolon - PostgreSQL cloud native High Availability.
+engine: gotpl
+home: https://github.com/sorintlab/stolon
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/stolon.png
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: stolon
+sources:
+- https://github.com/sorintlab/stolon
+- https://github.com/lwolf/stolon-chart
+version: 1.6.2

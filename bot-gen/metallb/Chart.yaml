@@ -1,0 +1,23 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 0.9.3
+description: The Metal LB for Kubernetes
+home: https://metallb.universe.tf
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/metallb.png
+keywords:
+- load-balancer
+- balancer
+- lb
+- bgp
+- arp
+- vrrp
+- vip
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: metallb
+sources:
+- https://github.com/metallb/metallb
+- https://github.com/bitnami/bitnami-docker-metallb
+version: 0.1.21

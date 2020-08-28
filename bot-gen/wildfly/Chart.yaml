@@ -1,0 +1,22 @@
+annotations:
+  category: ApplicationServer
+apiVersion: v1
+appVersion: 20.0.1
+description: Chart for Wildfly
+engine: gotpl
+home: http://wildfly.org
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/wildfly.png
+keywords:
+- wildfly
+- java
+- http
+- web
+- application server
+- jsp
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: wildfly
+sources:
+- https://github.com/bitnami/bitnami-docker-wildfly
+version: 4.3.3

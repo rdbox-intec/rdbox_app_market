@@ -1,0 +1,12 @@
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 9.x.x
+- condition: redis.enabled
+  name: redis
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 10.x.x
+- name: common
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 0.x.x

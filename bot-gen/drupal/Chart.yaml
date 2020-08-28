@@ -1,0 +1,23 @@
+annotations:
+  category: CMS
+apiVersion: v1
+appVersion: 9.0.3
+description: One of the most versatile open source content management systems.
+engine: gotpl
+home: http://www.drupal.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/drupal.png
+keywords:
+- drupal
+- cms
+- blog
+- http
+- web
+- application
+- php
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: drupal
+sources:
+- https://github.com/bitnami/bitnami-docker-drupal
+version: 8.1.2

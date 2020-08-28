@@ -1,0 +1,21 @@
+annotations:
+  category: LogManagement
+apiVersion: v1
+appVersion: 7.9.0
+description: Logstash is an open source, server-side data processing pipeline that
+  ingests data from a multitude of sources simultaneously, transforms it, and then
+  sends it to your favorite "stash".
+engine: gotpl
+home: https://www.elastic.co/products/logstash
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/logstash.png
+keywords:
+- logstash
+- logging
+- elk
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: logstash
+sources:
+- https://github.com/bitnami/bitnami-docker-logstash
+version: 0.4.7

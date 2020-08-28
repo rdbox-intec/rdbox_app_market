@@ -1,0 +1,22 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 2.4.46
+description: Chart for Apache HTTP Server
+engine: gotpl
+home: https://httpd.apache.org
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/apache.png
+keywords:
+- apache
+- http
+- https
+- www
+- web
+- reverse proxy
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: apache
+sources:
+- https://github.com/bitnami/bitnami-docker-apache
+version: 7.3.24

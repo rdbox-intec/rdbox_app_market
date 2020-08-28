@@ -1,0 +1,21 @@
+annotations:
+  category: MachineLearning
+apiVersion: v1
+appVersion: 1.6.0
+description: Deep learning platform that accelerates the transition from research
+  prototyping to production deployment
+engine: gotpl
+home: http://pytorch.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/pytorch.png
+keywords:
+- pytorch
+- python
+- machine
+- learning
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: pytorch
+sources:
+- https://github.com/bitnami/bitnami-docker-pytorch
+version: 1.3.21

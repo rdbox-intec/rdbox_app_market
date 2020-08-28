@@ -1,0 +1,25 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 2.0.2
+description: Harbor is an an open source trusted cloud native registry project that
+  stores, signs, and scans content
+engine: gotpl
+home: https://goharbor.io/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/harbor.png
+keywords:
+- docker
+- registry
+- vulnerability
+- scan
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: harbor
+sources:
+- https://github.com/bitnami/bitnami-docker-harbor-core
+- https://github.com/bitnami/bitnami-docker-harbor-portal
+- https://github.com/bitnami/bitnami-docker-harbor-jobservice
+- https://github.com/bitnami/bitnami-docker-harbor-registry
+- https://github.com/bitnami/bitnami-docker-harbor-registryctl
+version: 7.1.1

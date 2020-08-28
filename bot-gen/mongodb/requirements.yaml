@@ -1,0 +1,6 @@
+dependencies:
+- name: common
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - bitnami-common
+  version: 0.x.x

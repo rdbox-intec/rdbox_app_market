@@ -1,0 +1,21 @@
+annotations:
+  category: CMS
+apiVersion: v1
+appVersion: 3.9.21
+description: PHP content management system (CMS) for publishing web content
+engine: gotpl
+home: http://www.joomla.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/joomla.png
+keywords:
+- joomla
+- cms
+- blog
+- http
+- php
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: joomla
+sources:
+- https://github.com/bitnami/bitnami-docker-joomla
+version: 8.1.2

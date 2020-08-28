@@ -1,0 +1,10 @@
+apiVersion: v1
+appVersion: 0.1.1
+description: vaultingkube takes config maps and secrets stored inside Hashicorp Vault
+  and syncs them to your Kubernetes cluster.
+home: https://github.com/sunshinekitty/vaultingkube
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: vaultingkube
+version: 0.1.2

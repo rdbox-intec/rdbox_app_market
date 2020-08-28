@@ -1,0 +1,17 @@
+annotations:
+  category: DeveloperTools
+apiVersion: v1
+appVersion: 1.8.3
+description: Highly available and distributed service discovery and key-value store
+  designed with support for the modern data center to make distributed systems and
+  configuration easy.
+engine: gotpl
+home: https://www.consul.io/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/consul.png
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: consul
+sources:
+- https://github.com/bitnami/bitnami-docker-consul
+version: 7.1.6

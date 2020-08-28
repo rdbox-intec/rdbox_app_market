@@ -1,0 +1,21 @@
+annotations:
+  category: DeveloperTools
+apiVersion: v1
+appVersion: 0.7.3
+description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+  with information about exposed Kubernetes services to make them discoverable.
+engine: gotpl
+home: https://github.com/kubernetes-sigs/external-dns
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/external-dns.png
+keywords:
+- external-dns
+- network
+- dns
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: external-dns
+sources:
+- https://github.com/kubernetes-sigs/external-dns
+- https://github.com/bitnami/bitnami-docker-external-dns
+version: 3.3.0

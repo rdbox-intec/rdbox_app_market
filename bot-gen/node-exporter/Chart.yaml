@@ -1,0 +1,21 @@
+annotations:
+  category: Analytics
+apiVersion: v1
+appVersion: 1.0.1
+description: Prometheus exporter for hardware and OS metrics exposed by UNIX kernels,
+  with pluggable metric collectors.
+engine: gotpl
+home: https://prometheus.io/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/node-exporter.png
+keywords:
+- prometheus
+- node-exporter
+- monitoring
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: node-exporter
+sources:
+- https://github.com/bitnami/bitnami-docker-node-exporter
+- https://github.com/prometheus/node_exporter
+version: 1.1.0

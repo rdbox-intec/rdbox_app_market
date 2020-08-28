@@ -1,0 +1,15 @@
+apiVersion: v1
+appVersion: 0.36.0
+description: Apache Superset (incubating) is a modern, enterprise-ready business intelligence
+  web application
+home: https://github.com/apache/incubator-superset
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/superset.png
+keywords:
+- bi
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: superset
+sources:
+- https://github.com/apache/incubator-superset
+version: 1.1.11

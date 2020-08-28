@@ -1,0 +1,27 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 2.1.3
+description: Kong is a scalable, open source API layer (aka API gateway or API middleware)
+  that runs in front of any RESTful API. Extra functionalities beyond the core platform
+  are extended through plugins. Kong is built on top of reliable technologies like
+  NGINX and provides an easy-to-use RESTful API to operate and configure the system.
+engine: gotpl
+home: https://konghq.com/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/kong.png
+keywords:
+- kong
+- ingress
+- openresty
+- controller
+- http
+- web
+- www
+- reverse proxy
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: kong
+sources:
+- https://github.com/bitnami/bitnami-docker-kong
+version: 1.3.0

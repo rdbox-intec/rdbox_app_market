@@ -1,0 +1,24 @@
+{{- if eq .Values.mode "distributed" }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "mxnet.fullname" . }}-scheduler
+  labels: {{- include "mxnet.labels" . | nindent 4 }}
+    app.kubernetes.io/component: scheduler
+  {{- if .Values.service.annotations }}
+  annotations: {{- include "mxnet.tplValue" ( dict "value" .Values.service.annotations "context" $) | nindent 4 }}
+  {{- end }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: mxnet
+      name: mxnet
+      {{- if and (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) (not (empty .Values.service.nodePort)) }}
+      nodePort: {{ .Values.service.nodePort }}
+      {{- else if eq .Values.service.type "ClusterIP" }}
+      nodePort: null
+      {{- end }}
+  selector: {{- include "mxnet.matchLabels" . | nindent 4 }}
+    app.kubernetes.io/component: scheduler
+{{- end }}

@@ -1,0 +1,21 @@
+annotations:
+  category: DeveloperTools
+apiVersion: v1
+appVersion: 2.6.1
+description: Spring Cloud Data Flow is a microservices-based toolkit for building
+  streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.
+home: https://dataflow.spring.io/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/spring-cloud-dataflow.png
+keywords:
+- spring-cloud
+- dataflow
+- skipper
+- spring
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: spring-cloud-dataflow
+sources:
+- https://github.com/bitnami/bitnami-docker-spring-cloud-dataflow
+- https://github.com/bitnami/bitnami-docker-spring-cloud-skipper
+version: 0.6.2

@@ -1,0 +1,21 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 1.19.1
+description: Chart for the nginx server
+engine: gotpl
+home: http://www.nginx.org
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/nginx.png
+keywords:
+- nginx
+- http
+- web
+- www
+- reverse proxy
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: nginx
+sources:
+- https://github.com/bitnami/bitnami-docker-nginx
+version: 6.1.0

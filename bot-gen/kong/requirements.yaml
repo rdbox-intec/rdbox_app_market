@@ -1,0 +1,9 @@
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 8.x.x
+- condition: cassandra.enabled
+  name: cassandra
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 5.x.x

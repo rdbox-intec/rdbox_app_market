@@ -1,0 +1,22 @@
+annotations:
+  category: Database
+apiVersion: v1
+appVersion: 3.4.13
+description: etcd is a distributed key value store that provides a reliable way to
+  store data across a cluster of machines
+engine: gotpl
+home: https://coreos.com/etcd/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/etcd.png
+keywords:
+- etcd
+- cluster
+- database
+- cache
+- key-value
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: etcd
+sources:
+- https://github.com/bitnami/bitnami-docker-etcd
+version: 4.10.1

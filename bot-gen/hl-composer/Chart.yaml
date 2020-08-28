@@ -1,0 +1,17 @@
+apiVersion: v1
+appVersion: 0.20.0
+description: Hyperledger Composer REST Server chart
+home: https://hyperledger.github.io/composer
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/hl-composer.png
+keywords:
+- blockchain
+- hyperledger
+- fabric
+- composer
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: hl-composer
+sources:
+- https://github.com/hyperledger/composer
+version: 1.0.12

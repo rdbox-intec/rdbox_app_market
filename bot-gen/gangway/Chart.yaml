@@ -1,0 +1,13 @@
+apiVersion: v1
+appVersion: 3.3.0
+description: An application that can be used to easily enable authentication flows
+  via OIDC for a kubernetes cluster.
+engine: gotpl
+home: https://github.com/heptiolabs/gangway
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: gangway
+sources:
+- https://github.com/heptiolabs/gangway
+version: 0.4.2

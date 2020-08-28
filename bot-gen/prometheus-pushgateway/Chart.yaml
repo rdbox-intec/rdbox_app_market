@@ -1,0 +1,14 @@
+apiVersion: v1
+appVersion: 1.2.0
+description: A Helm chart for prometheus pushgateway
+home: https://github.com/prometheus/pushgateway
+keywords:
+- pushgateway
+- prometheus
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: prometheus-pushgateway
+sources:
+- https://github.com/prometheus/pushgateway
+version: 1.4.1

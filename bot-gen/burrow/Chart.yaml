@@ -1,0 +1,21 @@
+apiVersion: v1
+appVersion: 0.29.0
+deprecated: false
+description: Burrow is a permissionable smart contract machine
+engine: gotpl
+home: https://github.com/hyperledger/burrow
+icon: https://raw.githubusercontent.com/hyperledger/burrow/develop/docs/assets/images/burrow.png
+keywords:
+- blockchain
+- smart contracts
+- ethereum
+- hyperledger
+- evm
+- web3
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: burrow
+sources:
+- https://github.com/hyperledger/burrow
+version: 1.5.2

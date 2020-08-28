@@ -1,0 +1,24 @@
+annotations:
+  category: CMS
+apiVersion: v1
+appVersion: 3.31.2
+description: A simple, powerful publishing platform that allows you to share your
+  stories with the world
+engine: gotpl
+home: http://www.ghost.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/ghost.png
+keywords:
+- ghost
+- blog
+- http
+- web
+- application
+- nodejs
+- javascript
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: ghost
+sources:
+- https://github.com/bitnami/bitnami-docker-ghost
+version: 10.1.4

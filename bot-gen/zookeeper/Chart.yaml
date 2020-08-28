@@ -1,0 +1,19 @@
+annotations:
+  category: Infrastructure
+apiVersion: v1
+appVersion: 3.6.1
+description: A centralized service for maintaining configuration information, naming,
+  providing distributed synchronization, and providing group services for distributed
+  applications.
+engine: gotpl
+home: https://zookeeper.apache.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/zookeeper.png
+keywords:
+- zookeeper
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: zookeeper
+sources:
+- https://github.com/bitnami/bitnami-docker-zookeeper
+version: 5.21.5

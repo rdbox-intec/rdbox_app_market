@@ -1,0 +1,13 @@
+apiVersion: v1
+appVersion: 0.9.2
+description: A Helm chart for Cerebro - a web admin tool that replaces Kopf.
+home: https://github.com/lmenezes/cerebro
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/cerebro.png
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: cerebro
+sources:
+- https://github.com/lmenezes/cerebro-docker
+- https://github.com/lmenezes/cerebro
+version: 1.9.3

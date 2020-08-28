@@ -1,0 +1,23 @@
+annotations:
+  category: CMS
+apiVersion: v1
+appVersion: 5.5.0
+description: Web publishing platform for building blogs and websites.
+engine: gotpl
+home: http://www.wordpress.com/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/wordpress.png
+keywords:
+- wordpress
+- cms
+- blog
+- http
+- web
+- application
+- php
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: wordpress
+sources:
+- https://github.com/bitnami/bitnami-docker-wordpress
+version: 9.5.1

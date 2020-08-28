@@ -1,0 +1,15 @@
+apiVersion: v1
+appVersion: v1.1.8
+description: A Helm chart for AWS ALB Ingress Controller
+engine: gotpl
+home: https://github.com/kubernetes-sigs/aws-alb-ingress-controller
+keywords:
+- aws
+- ingress
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: aws-alb-ingress-controller
+sources:
+- https://github.com/kubernetes-sigs/aws-alb-ingress-controller
+version: 1.0.2

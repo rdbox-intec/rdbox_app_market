@@ -1,0 +1,11 @@
+apiVersion: v1
+appVersion: '1.6'
+description: An Open-Source antivirus engine for detecting trojans, viruses, malware
+  & other malicious threats.
+home: https://www.clamav.net
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/clamav.png
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: clamav
+version: 1.0.5

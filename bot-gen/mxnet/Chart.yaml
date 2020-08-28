@@ -1,0 +1,20 @@
+annotations:
+  category: MachineLearning
+apiVersion: v1
+appVersion: 1.6.0
+description: A flexible and efficient library for deep learning
+engine: gotpl
+home: https://mxnet.apache.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mxnet.png
+keywords:
+- mxnet
+- python
+- machine
+- learning
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: mxnet
+sources:
+- https://github.com/bitnami/bitnami-docker-mxnet
+version: 1.4.23

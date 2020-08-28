@@ -1,0 +1,12 @@
+dependencies:
+- condition: mariadb.enabled
+  name: mariadb
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - ejbca-database
+  version: 7.x.x
+- name: common
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - bitnami-common
+  version: 0.x.x

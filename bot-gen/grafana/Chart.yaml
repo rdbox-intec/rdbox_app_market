@@ -1,0 +1,21 @@
+annotations:
+  category: Analytics
+apiVersion: v1
+appVersion: 7.1.4
+description: Grafana is an open source, feature rich metrics dashboard and graph editor
+  for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
+engine: gotpl
+home: https://grafana.com/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/grafana.png
+keywords:
+- analytics
+- monitoring
+- metrics
+- logs
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: grafana
+sources:
+- https://github.com/bitnami/bitnami-docker-grafana
+version: 3.4.1

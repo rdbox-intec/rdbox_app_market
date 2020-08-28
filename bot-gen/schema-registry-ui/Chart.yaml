@@ -1,0 +1,17 @@
+apiVersion: v1
+appVersion: v0.9.5
+description: This is a web tool for the confluentinc/schema-registry in order to create
+  / view / search / evolve / view history & configure Avro schemas of your Kafka cluster.
+home: https://github.com/Landoop/schema-registry-ui
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/schema-registry-ui
+keywords:
+- confluent
+- schema-registry-ui
+- Kafka
+- avro
+- schema-registry
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: schema-registry-ui
+version: 0.4.2

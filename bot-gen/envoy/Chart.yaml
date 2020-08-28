@@ -1,0 +1,16 @@
+apiVersion: v1
+appVersion: 1.11.2
+description: Envoy is an open source edge and service proxy, designed for cloud-native
+  applications.
+home: https://www.envoyproxy.io/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/envoy
+keywords:
+- envoy
+- proxy
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: envoy
+sources:
+- https://github.com/envoyproxy/envoy
+version: 1.9.2

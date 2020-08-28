@@ -1,0 +1,18 @@
+apiVersion: v1
+appVersion: v1.7.3-debian-cloudwatch-1.0
+description: A Fluentd CloudWatch Helm chart for Kubernetes.
+engine: gotpl
+home: https://www.fluentd.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/fluentd-cloudwatch.png
+keywords:
+- fluentd
+- cloudwatch
+- logging
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: fluentd-cloudwatch
+sources:
+- https://github.com/kubernetes/charts
+- https://github.com/fluent/fluentd-kubernetes-daemonset
+version: 0.13.0

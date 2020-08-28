@@ -1,0 +1,5 @@
+dependencies:
+- condition: minio.enabled
+  name: minio
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 3.x.x

@@ -1,0 +1,14 @@
+apiVersion: v1
+appVersion: v0.14.0
+description: A Helm chart for Atlantis https://www.runatlantis.io
+home: https://www.runatlantis.io
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/atlantis.png
+keywords:
+- terraform
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: atlantis
+sources:
+- https://github.com/runatlantis/atlantis
+version: 3.12.2

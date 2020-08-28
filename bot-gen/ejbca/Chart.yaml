@@ -1,0 +1,20 @@
+annotations:
+  category: CertificateAuthority
+apiVersion: v1
+appVersion: 6.15.2-6
+description: Enterprise class PKI Certificate Authority built on JEE technology.
+engine: gotpl
+home: https://www.ejbca.org/
+icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/ejbca.png
+keywords:
+- ejbca
+- ca
+- pki
+- certificate
+maintainers:
+- email: info-rdbox@intec.co.jp
+  name: RDBOX Project
+name: ejbca
+sources:
+- https://github.com/bitnami/bitnami-docker-ejbca
+version: 0.2.1
