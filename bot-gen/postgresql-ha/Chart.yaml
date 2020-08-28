@@ -23,4 +23,4 @@ maintainers:
 name: postgresql-ha
 sources:
 - https://github.com/bitnami/bitnami-docker-postgresql
-version: 3.5.7
+version: 3.5.8

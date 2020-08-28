@@ -1,32 +1,53 @@
-{{- if .Values.operator.enabled }}
+{{- if .Values.prometheusOperator.enabled }}
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "prometheus-operator.operator.fullname" . }}
-  namespace: {{ .Release.Namespace }}
-  labels: {{- include "prometheus-operator.operator.labels" . | nindent 4 }}
-  {{- with .Values.operator.service.annotations }}
-  annotations: {{- toYaml . | nindent 4 }}
-  {{- end }}
+  name: {{ template "prometheus-operator.fullname" . }}-operator
+  namespace: {{ template "prometheus-operator.namespace" . }}
+  labels:
+    app: {{ template "prometheus-operator.name" . }}-operator
+{{ include "prometheus-operator.labels" . | indent 4 }}
+{{- if .Values.prometheusOperator.service.labels }}
+{{ toYaml .Values.prometheusOperator.service.labels | indent 4 }}
+{{- end }}
+{{- if .Values.prometheusOperator.service.annotations }}
+  annotations:
+{{ toYaml .Values.prometheusOperator.service.annotations | indent 4 }}
+{{- end }}
 spec:
-  type: {{ .Values.operator.service.type }}
-  {{- if and .Values.operator.service.loadBalancerIP (eq .Values.operator.service.type "LoadBalancer") }}
-  loadBalancerIP: {{ .Values.operator.service.loadBalancerIP }}
+{{- if .Values.prometheusOperator.service.clusterIP }}
+  clusterIP: {{ .Values.prometheusOperator.service.clusterIP }}
+{{- end }}
+{{- if .Values.prometheusOperator.service.externalIPs }}
+  externalIPs:
+{{ toYaml .Values.prometheusOperator.service.externalIPs | indent 4 }}
+{{- end }}
+{{- if .Values.prometheusOperator.service.loadBalancerIP }}
+  loadBalancerIP: {{ .Values.prometheusOperator.service.loadBalancerIP }}
+{{- end }}
+{{- if .Values.prometheusOperator.service.loadBalancerSourceRanges }}
+  loadBalancerSourceRanges:
+  {{- range $cidr := .Values.prometheusOperator.service.loadBalancerSourceRanges }}
+    - {{ $cidr }}
   {{- end }}
-  {{- if and (eq .Values.operator.service.type "LoadBalancer") .Values.operator.service.loadBalancerSourceRanges }}
-  {{- with .Values.operator.service.loadBalancerSourceRanges }}
-  loadBalancerSourceRanges: {{- toYaml . | nindent 4 }}
-  {{- end }}
-  {{- end }}
-  {{- if and (eq .Values.operator.service.type "ClusterIP") .Values.operator.service.clusterIP }}
-  clusterIP: {{ .Values.operator.service.clusterIP }}
-  {{- end }}
+{{- end }}
   ports:
-    - name: http
-      port: {{ .Values.operator.service.port }}
-      targetPort: http
-      {{- if and .Values.operator.service.nodePort (or (eq .Values.operator.service.type "NodePort") (eq .Values.operator.service.type "LoadBalancer")) }}
-      nodePort: {{ .Values.operator.service.nodePort }}
-      {{- end }}
-  selector: {{- include "prometheus-operator.operator.matchLabels" . | nindent 4 }}
+  - name: http
+    {{- if eq .Values.prometheusOperator.service.type "NodePort" }}
+    nodePort: {{ .Values.prometheusOperator.service.nodePort }}
+    {{- end }}
+    port: 8080
+    targetPort: http
+  {{- if .Values.prometheusOperator.tlsProxy.enabled }}
+  - name: https
+    {{- if eq .Values.prometheusOperator.service.type "NodePort"}}
+    nodePort: {{ .Values.prometheusOperator.service.nodePortTls }}
+    {{- end }}
+    port: 443
+    targetPort: https
+  {{- end }}
+  selector:
+    app: {{ template "prometheus-operator.name" . }}-operator
+    release: {{ $.Release.Name | quote }}
+  type: "{{ .Values.prometheusOperator.service.type }}"
 {{- end }}

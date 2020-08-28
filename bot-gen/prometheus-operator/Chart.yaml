@@ -1,22 +1,20 @@
-annotations:
-  category: Analytics
 apiVersion: v1
-appVersion: 0.41.0
-description: The Prometheus Operator for Kubernetes provides easy monitoring definitions
-  for Kubernetes services and deployment and management of Prometheus instances.
+appVersion: 0.38.1
+description: Provides easy monitoring definitions for Kubernetes services, and deployment
+  and management of Prometheus instances.
 engine: gotpl
-home: https://github.com/coreos/prometheus-operator/
+home: https://github.com/coreos/prometheus-operator
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/prometheus-operator.png
 keywords:
-- prometheus
-- alertmanager
 - operator
-- monitoring
+- prometheus
 maintainers:
 - email: info-rdbox@intec.co.jp
   name: RDBOX Project
 name: prometheus-operator
 sources:
-- https://github.com/bitnami/bitnami-docker-prometheus-operator
-- https://github.com/coreos/prometheus-operator/
-version: 0.32.0
+- https://github.com/coreos/kube-prometheus
+- https://github.com/coreos/prometheus-operator
+- https://coreos.com/operators/prometheus
+tillerVersion: '>=2.12.0'
+version: 9.3.1

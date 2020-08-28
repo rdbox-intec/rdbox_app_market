@@ -1,26 +1,32 @@
-{{- if and .Values.operator.enabled .Values.operator.serviceMonitor.enabled }}
+{{- if and .Values.prometheusOperator.enabled .Values.prometheusOperator.serviceMonitor.selfMonitor }}
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: {{ template "prometheus-operator.operator.fullname" . }}
-  namespace: {{ .Release.Namespace }}
-  labels: {{- include "prometheus-operator.operator.labels" . | nindent 4 }}
+  name: {{ template "prometheus-operator.fullname" . }}-operator
+  namespace: {{ template "prometheus-operator.namespace" . }}
+  labels:
+    app: {{ template "prometheus-operator.name" . }}-operator
+{{ include "prometheus-operator.labels" . | indent 4 }}
 spec:
   endpoints:
-    - port: http
-      honorLabels: true
-      {{- if .Values.operator.serviceMonitor.interval }}
-      interval: {{ .Values.operator.serviceMonitor.interval }}
-      {{- end }}
-  {{- if .Values.operator.serviceMonitor.metricRelabelings }}
-      metricRelabelings: {{- include "prometheus-operator.tplValue" ( dict "value" .Values.operator.serviceMonitor.metricRelabelings "context" $) | nindent 8 }}
-  {{- end }}
-  {{- if .Values.operator.serviceMonitor.relabelings }}
-      relabelings: {{- toYaml .Values.operator.serviceMonitor.relabelings | nindent 8 }}
+  - port: http
+    honorLabels: true
+    {{- if .Values.prometheusOperator.serviceMonitor.interval }}
+    interval: {{ .Values.prometheusOperator.serviceMonitor.interval }}
+    {{- end }}
+{{- if .Values.prometheusOperator.serviceMonitor.metricRelabelings }}
+    metricRelabelings:
+{{ tpl (toYaml .Values.prometheusOperator.serviceMonitor.metricRelabelings | indent 6) . }}
+{{- end }}
+{{- if .Values.prometheusOperator.serviceMonitor.relabelings }}
+    relabelings:
+{{ toYaml .Values.prometheusOperator.serviceMonitor.relabelings | indent 6 }}
 {{- end }}
   selector:
-    matchLabels: {{- include "prometheus-operator.operator.matchLabels" . | nindent 6 }}
+    matchLabels:
+      app: {{ template "prometheus-operator.name" . }}-operator
+      release: {{ $.Release.Name | quote }}
   namespaceSelector:
     matchNames:
-      - {{ .Release.Namespace }}
+      - {{ printf "%s" (include "prometheus-operator.namespace" .) | quote }}
 {{- end }}

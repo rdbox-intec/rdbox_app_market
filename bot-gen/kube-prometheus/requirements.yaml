@@ -1,0 +1,14 @@
+dependencies:
+- name: common
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  tags:
+  - bitnami-common
+  version: 0.x.x
+- condition: exporters.enabled,exporters.node-exporter.enabled
+  name: node-exporter
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 1.x.x
+- condition: exporters.enabled,exporters.kube-state-metrics.enabled
+  name: kube-state-metrics
+  repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
+  version: 0.x.x

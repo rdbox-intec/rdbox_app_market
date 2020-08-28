@@ -1,11 +1,13 @@
-{{- if and .Values.kubeProxy.enabled .Values.kubeProxy.service.enabled }}
+{{- if .Values.kubeProxy.enabled }}
 apiVersion: v1
 kind: Service
 metadata:
   name: {{ template "prometheus-operator.fullname" . }}-kube-proxy
-  namespace: {{ .Values.kubeProxy.namespace }}
-  labels: {{- include "prometheus-operator.labels" . | nindent 4 }}
-    app.kubernetes.io/component: kube-proxy
+  labels:
+    app: {{ template "prometheus-operator.name" . }}-kube-proxy
+    jobLabel: kube-proxy
+{{ include "prometheus-operator.labels" . | indent 4 }}
+  namespace: kube-system
 spec:
   clusterIP: None
   ports:
@@ -16,10 +18,10 @@ spec:
 {{- if .Values.kubeProxy.endpoints }}{{- else }}
   selector:
     {{- if .Values.kubeProxy.service.selector }}
-    {{ toYaml .Values.kubeProxy.service.selector | nindent 4 }}
-    {{- else }}
+{{ toYaml .Values.kubeProxy.service.selector | indent 4 }}
+    {{- else}}
     k8s-app: kube-proxy
-    {{- end }}
+    {{- end}}
 {{- end }}
   type: ClusterIP
 {{- end -}}

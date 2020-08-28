@@ -1,14 +1,24 @@
-{{- if and .Values.prometheus.enabled .Values.rbac.create .Values.rbac.pspEnabled }}
-apiVersion: {{ template "podSecurityPolicy.apiVersion" . }}
+{{- if and .Values.prometheus.enabled .Values.global.rbac.create .Values.global.rbac.pspEnabled }}
+apiVersion: policy/v1beta1
 kind: PodSecurityPolicy
 metadata:
-  name: {{ template "prometheus-operator.prometheus.fullname" . }}
-  labels: {{- include "prometheus-operator.prometheus.labels" . | nindent 4 }}
+  name: {{ template "prometheus-operator.fullname" . }}-prometheus
+  labels:
+    app: {{ template "prometheus-operator.name" . }}-prometheus
+{{- if .Values.global.rbac.pspAnnotations }}
+  annotations:
+{{ toYaml .Values.global.rbac.pspAnnotations | indent 4 }}
+{{- end }}
+{{ include "prometheus-operator.labels" . | indent 4 }}
 spec:
   privileged: false
-  allowPrivilegeEscalation: false
-  requiredDropCapabilities:
-    - ALL
+  # Required to prevent escalations to root.
+  # allowPrivilegeEscalation: false
+  # This is redundant with non-root + disallow privilege escalation,
+  # but we can provide it for defense in depth.
+  #requiredDropCapabilities:
+  #  - ALL
+  # Allow core volume types.
   volumes:
     - 'configMap'
     - 'emptyDir'
@@ -20,20 +30,26 @@ spec:
   hostIPC: false
   hostPID: false
   runAsUser:
-    rule: 'MustRunAs'
-    ranges:
-      - min: 1001
-        max: 1001
+    # Permits the container to run with root privileges as well.
+    rule: 'RunAsAny'
   seLinux:
+    # This policy assumes the nodes are using AppArmor rather than SELinux.
     rule: 'RunAsAny'
   supplementalGroups:
     rule: 'MustRunAs'
     ranges:
-      - min: 1001
-        max: 1001
+      # Forbid adding the root group.
+      - min: 0
+        max: 65535
   fsGroup:
     rule: 'MustRunAs'
     ranges:
-      - min: 1001
-        max: 1001
+      # Forbid adding the root group.
+      - min: 0
+        max: 65535
+  readOnlyRootFilesystem: false
+{{- if .Values.prometheus.podSecurityPolicy.allowedCapabilities }}
+  allowedCapabilities:
+{{ toYaml .Values.prometheus.podSecurityPolicy.allowedCapabilities | indent 4 }}
+{{- end }}
 {{- end }}
