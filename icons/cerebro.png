@@ -45,7 +45,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="0402:23E0:85748:EFC05:5F51B04F" data-pjax-transient="true"/><meta name="html-safe-nonce" content="e2a2050dc0dd6c5fbd1c28fb68d6fe78c8a99860" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNDAyOjIzRTA6ODU3NDg6RUZDMDU6NUY1MUIwNEYiLCJ2aXNpdG9yX2lkIjoiNjI1MDA3NzI3NzM1MjIxMDUxMSIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true"/><meta name="visitor-hmac" content="730bced84a58a6166918243af37ac214f5a304e2c403279ca896e539c402b178" data-pjax-transient="true"/><meta name="cookie-consent-required" content="false" data-pjax-transient="true"/>
+  <meta name="request-id" content="0400:4C15:218734:36C843:5F51BA34" data-pjax-transient="true"/><meta name="html-safe-nonce" content="e2656115aa5fa04f01b19ae79d91121d56a4a1ee" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiIwNDAwOjRDMTU6MjE4NzM0OjM2Qzg0Mzo1RjUxQkEzNCIsInZpc2l0b3JfaWQiOiI2NTQ0NDczNTYwMDkzNjY5OTQwIiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta name="visitor-hmac" content="997e05751725c098144adf82c082f413e21d06d869d287142defb6d413ee9850" data-pjax-transient="true"/><meta name="cookie-consent-required" content="false" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:54560347" data-pjax-transient>
 
@@ -295,7 +295,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="1gg3YLHt3+agfUs2GgcymhB6Z1i94E3PBJYx9uUd695EQR2rjb8HhwY8HjH24OuGvccE/COysVurZYrVvsddUw==" />
+          <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="iArNMUyo6ddbAr+68HH2Qk9lKyZDi3fwoeM5RNA2E6m2TF6IY/ZMITYX3IDNgUliSN4ZeNzZt6vb8NzlOVoc1A==" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -774,7 +774,7 @@
               <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path></svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/lmenezes/cerebro/delete/master/public/img/logo.png" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="z/nZjK77MSxAJ3O6mM3boG39aNroX/uHyrMFbo4hgF4F/IAs4aARGcN1hCgPRVuW8QfYurze63bVhbMNssOgZQ==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/lmenezes/cerebro/delete/master/public/img/logo.png" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="Yi01fQfrUJUPl2D72m2jaGmpg0+FzRdPY5Go+cz77uWKOK6R6Vg0E8nSJ5U8TCG7bP4S8gGS/YSN6FzWSp6zmw==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="You must be signed in to make or propose changes" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z"></path></svg>
