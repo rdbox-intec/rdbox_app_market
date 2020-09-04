@@ -5,10 +5,10 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 0.6.0
-    created: "2020-08-28T09:30:48.269273+09:00"
+    created: "2020-09-04T04:30:22.992880853Z"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
-    digest: 6ce5467ca4634b6f391150b141be588d1d24fd7d9f29bbd6f8a9e38ce179ac2d
+    digest: 3b44b2e74818ba3531d3f11d1960b150283488aa794946ad1ea0a686501d9d23
     home: http://www.bitnami.com/
     icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/common.png
     keywords:
@@ -29,14 +29,14 @@ entries:
   gogs:
   - apiVersion: v1
     appVersion: 0.11.86
-    created: "2020-08-28T09:30:48.27329+09:00"
+    created: "2020-09-04T04:30:22.996699959Z"
     dependencies:
     - condition: postgresql.install
       name: postgresql
       repository: https://rdbox-intec.github.io/rdbox_app_market/bot-gen
       version: 9.x.x
     description: 'Gogs: Go Git Service'
-    digest: be380b98a7eb2b11638ca41cc8dff6df9ec5a32daa4711665f2ba6bfd10f4b67
+    digest: f297bd2b7e3d9a137dc87c5ff0650284df1dfe5ab4132e7997987998f08e54ab
     home: https://gogs.io/
     icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/gogs.png
     keywords:
@@ -48,4 +48,4 @@ entries:
     urls:
     - gogs-0.7.11.tgz
     version: 0.7.11
-generated: "2020-08-28T09:30:48.268547+09:00"
+generated: "2020-09-04T04:30:22.991718151Z"
