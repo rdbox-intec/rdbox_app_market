@@ -1,11 +1,11 @@
 annotations:
   category: CMS
 apiVersion: v1
-appVersion: 3.31.2
+appVersion: 3.31.5
 description: A simple, powerful publishing platform that allows you to share your
   stories with the world
 engine: gotpl
-home: http://www.ghost.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/ghost
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/ghost.png
 keywords:
 - ghost
@@ -21,4 +21,5 @@ maintainers:
 name: ghost
 sources:
 - https://github.com/bitnami/bitnami-docker-ghost
-version: 10.1.4
+- http://www.ghost.org/
+version: 10.1.7

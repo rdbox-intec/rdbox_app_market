@@ -1,10 +1,10 @@
 annotations:
   category: CMS
 apiVersion: v1
-appVersion: 9.0.3
+appVersion: 9.0.4
 description: One of the most versatile open source content management systems.
 engine: gotpl
-home: http://www.drupal.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/drupal
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/drupal.png
 keywords:
 - drupal
@@ -20,4 +20,5 @@ maintainers:
 name: drupal
 sources:
 - https://github.com/bitnami/bitnami-docker-drupal
-version: 8.1.2
+- http://www.drupal.org/
+version: 8.1.3

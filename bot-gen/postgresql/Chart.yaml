@@ -5,7 +5,7 @@ appVersion: 11.9.0
 description: Chart for PostgreSQL, an object-relational database management system
   (ORDBMS) with an emphasis on extensibility and on standards-compliance.
 engine: gotpl
-home: https://www.postgresql.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/postgresql.png
 keywords:
 - postgresql
@@ -20,4 +20,5 @@ maintainers:
 name: postgresql
 sources:
 - https://github.com/bitnami/bitnami-docker-postgresql
-version: 9.3.3
+- https://www.postgresql.org/
+version: 9.4.0

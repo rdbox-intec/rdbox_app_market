@@ -6,7 +6,7 @@ description: Parse is a platform that enables users to add a scalable and powerf
   backend to launch a full-featured app for iOS, Android, JavaScript, Windows, Unity,
   and more.
 engine: gotpl
-home: https://parse.com/
+home: https://github.com/bitnami/charts/tree/master/bitnami/parse
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/parse.png
 keywords:
 - parse
@@ -22,4 +22,5 @@ name: parse
 sources:
 - https://github.com/bitnami/bitnami-docker-parse
 - https://github.com/bitnami/bitnami-docker-parse-dashboard
-version: 11.0.4
+- https://parse.com/
+version: 12.0.0

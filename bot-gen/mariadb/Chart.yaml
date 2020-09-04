@@ -6,7 +6,7 @@ description: Fast, reliable, scalable, and easy to use open-source relational da
   system. MariaDB Server is intended for mission-critical, heavy-load production systems
   as well as for embedding into mass-deployed software. Highly available MariaDB cluster.
 engine: gotpl
-home: https://mariadb.org
+home: https://github.com/bitnami/charts/tree/master/bitnami/mariadb
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/mariadb.png
 keywords:
 - mariadb
@@ -21,4 +21,5 @@ name: mariadb
 sources:
 - https://github.com/bitnami/bitnami-docker-mariadb
 - https://github.com/prometheus/mysqld_exporter
-version: 7.9.2
+- https://mariadb.org
+version: 7.9.3

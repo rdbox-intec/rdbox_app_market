@@ -4,7 +4,7 @@ apiVersion: v1
 appVersion: 6.15.2-6
 description: Enterprise class PKI Certificate Authority built on JEE technology.
 engine: gotpl
-home: https://www.ejbca.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/ejbca
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/ejbca.png
 keywords:
 - ejbca
@@ -17,4 +17,5 @@ maintainers:
 name: ejbca
 sources:
 - https://github.com/bitnami/bitnami-docker-ejbca
-version: 0.2.1
+- https://www.ejbca.org/
+version: 0.3.1

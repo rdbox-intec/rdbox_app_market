@@ -1,12 +1,12 @@
 annotations:
   category: Database
 apiVersion: v1
-appVersion: 6.0.6
+appVersion: 6.0.7
 description: Open source, advanced key-value store. It is often referred to as a data
   structure server since keys can contain strings, hashes, lists, sets and sorted
   sets.
 engine: gotpl
-home: http://redis.io/
+home: https://github.com/bitnami/charts/tree/master/bitnami/redis
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/redis.png
 keywords:
 - redis
@@ -18,4 +18,5 @@ maintainers:
 name: redis
 sources:
 - https://github.com/bitnami/bitnami-docker-redis
-version: 10.7.17
+- http://redis.io/
+version: 10.8.1

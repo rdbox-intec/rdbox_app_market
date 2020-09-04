@@ -1,11 +1,11 @@
 annotations:
   category: Infrastructure
 apiVersion: v1
-appVersion: 0.6.0
+appVersion: 0.6.2
 description: A Library Helm Chart for grouping common logic between bitnami charts.
   This chart is not deployable by itself.
 engine: gotpl
-home: http://www.bitnami.com/
+home: https://github.com/bitnami/charts/tree/master/bitnami/common
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/common.png
 keywords:
 - common
@@ -19,4 +19,5 @@ maintainers:
 name: common
 sources:
 - https://github.com/bitnami/charts
-version: 0.6.0
+- http://www.bitnami.com/
+version: 0.6.2

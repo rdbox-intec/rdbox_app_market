@@ -3,7 +3,7 @@ annotations:
 apiVersion: v1
 appVersion: 3.0.0
 description: Spark is a fast and general-purpose cluster computing system.
-home: https://spark.apache.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/spark
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/spark.png
 keywords:
 - apache
@@ -14,4 +14,5 @@ maintainers:
 name: spark
 sources:
 - https://github.com/bitnami/bitnami-docker-spark
-version: 2.0.2
+- https://spark.apache.org/
+version: 3.0.0

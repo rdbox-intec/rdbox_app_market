@@ -4,7 +4,7 @@ apiVersion: v1
 appVersion: 1.6.6
 description: Chart for Memcached
 engine: gotpl
-home: http://memcached.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/memcached
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/memcached.png
 keywords:
 - memcached
@@ -15,4 +15,5 @@ maintainers:
 name: memcached
 sources:
 - https://github.com/bitnami/bitnami-docker-memcached
-version: 4.2.21
+- http://memcached.org/
+version: 4.2.22

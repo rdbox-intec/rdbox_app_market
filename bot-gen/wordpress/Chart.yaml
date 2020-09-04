@@ -1,10 +1,10 @@
 annotations:
   category: CMS
 apiVersion: v1
-appVersion: 5.5.0
+appVersion: 5.5.1
 description: Web publishing platform for building blogs and websites.
 engine: gotpl
-home: http://www.wordpress.com/
+home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/wordpress.png
 keywords:
 - wordpress
@@ -20,4 +20,5 @@ maintainers:
 name: wordpress
 sources:
 - https://github.com/bitnami/bitnami-docker-wordpress
-version: 9.5.1
+- http://www.wordpress.com/
+version: 9.5.3

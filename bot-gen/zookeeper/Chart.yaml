@@ -6,7 +6,7 @@ description: A centralized service for maintaining configuration information, na
   providing distributed synchronization, and providing group services for distributed
   applications.
 engine: gotpl
-home: https://zookeeper.apache.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/zookeeper
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/zookeeper.png
 keywords:
 - zookeeper
@@ -16,4 +16,5 @@ maintainers:
 name: zookeeper
 sources:
 - https://github.com/bitnami/bitnami-docker-zookeeper
-version: 5.21.5
+- https://zookeeper.apache.org/
+version: 5.21.6

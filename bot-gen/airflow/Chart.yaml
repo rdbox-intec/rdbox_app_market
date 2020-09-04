@@ -5,7 +5,7 @@ appVersion: 1.10.12
 description: Apache Airflow is a platform to programmatically author, schedule and
   monitor workflows.
 engine: gotpl
-home: https://airflow.apache.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/airflow
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/airflow.png
 keywords:
 - apache
@@ -18,4 +18,5 @@ maintainers:
 name: airflow
 sources:
 - https://github.com/bitnami/bitnami-docker-airflow
-version: 6.4.0
+- https://airflow.apache.org/
+version: 6.4.1

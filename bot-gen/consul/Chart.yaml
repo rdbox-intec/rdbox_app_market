@@ -6,7 +6,7 @@ description: Highly available and distributed service discovery and key-value st
   designed with support for the modern data center to make distributed systems and
   configuration easy.
 engine: gotpl
-home: https://www.consul.io/
+home: https://github.com/bitnami/charts/tree/master/bitnami/consul
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/consul.png
 maintainers:
 - email: info-rdbox@intec.co.jp
@@ -14,4 +14,5 @@ maintainers:
 name: consul
 sources:
 - https://github.com/bitnami/bitnami-docker-consul
+- https://www.consul.io/
 version: 7.1.6

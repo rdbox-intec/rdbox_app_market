@@ -12,4 +12,4 @@ name: spark-history-server
 sources:
 - https://github.com/apache/spark
 - https://github.com/lightbend/spark-history-server-docker
-version: 1.2.1
+version: 1.3.0

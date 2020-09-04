@@ -4,7 +4,7 @@ apiVersion: v1
 appVersion: 1.19.1
 description: Chart for the nginx server
 engine: gotpl
-home: http://www.nginx.org
+home: https://github.com/bitnami/charts/tree/master/bitnami/nginx
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/nginx.png
 keywords:
 - nginx
@@ -18,4 +18,5 @@ maintainers:
 name: nginx
 sources:
 - https://github.com/bitnami/bitnami-docker-nginx
-version: 6.1.0
+- http://www.nginx.org
+version: 6.2.0

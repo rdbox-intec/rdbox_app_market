@@ -6,7 +6,7 @@ description: Moodle is a learning platform designed to provide educators, admini
   and learners with a single robust, secure and integrated system to create personalised
   learning environments
 engine: gotpl
-home: http://www.moodle.org/
+home: https://github.com/bitnami/charts/tree/master/bitnami/moodle
 icon: https://raw.githubusercontent.com/rdbox-intec/rdbox_app_market/master/icons/moodle.png
 keywords:
 - moodle
@@ -18,4 +18,5 @@ maintainers:
 name: moodle
 sources:
 - https://github.com/bitnami/bitnami-docker-moodle
+- http://www.moodle.org/
 version: 8.1.1

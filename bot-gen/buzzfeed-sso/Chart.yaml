@@ -13,4 +13,4 @@ maintainers:
 name: buzzfeed-sso
 sources:
 - https://hub.docker.com/r/buzzfeed/sso/
-version: 0.2.5
+version: 0.2.6
