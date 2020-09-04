@@ -1,7 +1,7 @@
 annotations:
   category: Infrastructure
 apiVersion: v1
-appVersion: 2.1.7
+appVersion: 2.1.8
 description: An open-source, cloud-native messaging system
 engine: gotpl
 home: https://github.com/bitnami/charts/tree/master/bitnami/nats
@@ -18,4 +18,4 @@ name: nats
 sources:
 - https://github.com/bitnami/bitnami-docker-nats
 - https://nats.io/
-version: 4.5.3
+version: 4.5.4
